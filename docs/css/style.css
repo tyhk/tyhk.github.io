@@ -176,6 +176,59 @@ footer {
   font-size: 0.85rem;
 }
 
+/* ── Navigation ── */
+.top-nav {
+  margin-bottom: 1rem;
+}
+.top-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.top-nav a:hover { text-decoration: underline; }
+
+.date-nav {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.date-nav ul {
+  display: inline-flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+}
+.date-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+.date-nav a:hover { background: var(--surface); }
+
+/* ── Archive ── */
+.date-list {
+  list-style: none;
+  padding: 0;
+}
+.date-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.date-list a {
+  color: var(--accent);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+.date-list a:hover { text-decoration: underline; }
+.date-list .count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .cards-grid { grid-template-columns: 1fr; }
