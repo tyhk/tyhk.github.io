@@ -69,7 +69,7 @@ nav a:hover { text-decoration: underline; }
   gap: 0.5rem;
   transition: border-color 0.2s;
 }
-.story-card:hover { border-color: var(--accent); }
+.story-card:hover { border-color: var(--accent); overflow: hidden; }
 
 .story-header { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 
@@ -128,8 +128,11 @@ nav a:hover { text-decoration: underline; }
   padding: 0.5rem 0.7rem;
   font-size: 0.8rem;
   color: var(--muted);
+  overflow: hidden;
 }
 .story-action strong { color: var(--accent); }
+.action-list { margin: 0; padding: 0.2rem 0 0 1rem; list-style: disc; }
+.action-list li { padding: 0.15rem 0; font-size: 0.78rem; color: var(--text); word-break: break-word; }
 
 .read-more {
   font-size: 0.82rem;
@@ -160,7 +163,9 @@ nav a:hover { text-decoration: underline; }
 }
 .impact-section ul { list-style: none; }
 .impact-section li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
-.action-section p { font-size: 0.95rem; color: var(--text); }
+.action-section ul { list-style: none; padding: 0; }
+.action-section ul li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); border-bottom: 1px solid var(--border); }
+.action-section ul li:last-child { border-bottom: none; }
 .sources-section ul { list-style: none; }
 .sources-section li { margin-bottom: 0.4rem; }
 .sources-section a { color: var(--accent); font-size: 0.88rem; word-break: break-all; }
