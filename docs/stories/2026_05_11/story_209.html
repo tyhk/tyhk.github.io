@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandworm攻擊波蘭電網：設備永久損壞警示</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>Sandworm攻擊波蘭電網：設備永久損壞警示</h1>
+    <div class="story-tags">
+      <span class="risk-badge">Critical</span>
+      <span class="category-badge">New Cybersecurity Incident</span>
+    </div>
+    <div class="story-body">
+      <p>2025年12月29日至30日，波蘭電力基礎設施遭遇近年最大規模網路攻擊，疑為俄羅斯駭客Sandworm相關組織Electrum所為，鎖定分散式能源資源（DER），標誌攻擊戰術轉向再生能源而非傳統發電廠。受害設施包括至少12至30個風力、太陽能發電場、兩座熱電共生（CHP）電廠（一處供應近50萬用戶），以及一製造公司；攻擊者入侵OT核心，禁用通訊設備、部署DynoWiper資料破壞軟體，導致部分遠端終端單元（RTU）永久損壞（Bricking），阻斷發電設施與配電系統通訊，但未造成大規模停電或電力生產中斷。
+
+調查機構差異：ESET首指Sandworm特徵（1月23日）；Dragos確認Electrum主導，視為機會主義攻擊（非精準定向），並參與一受害實體取證；CERT Polska（1月30日）公布詳細，強調逾30站點通訊失效，所有電網連接點（GCP）使用Moxa NPort 6xxx系列裝置伺服器預設帳密為漏洞，駭客還原出廠設定、改密碼、竄IP（如127.0.0.1）阻遠端存取。波蘭總理Donald Tusk（1月15日記者會）及能源部長Miłosz Motyka（1月13日）指控俄情報部門策劃，時值暴風雪低溫，若得逞恐影響50萬民眾。Dragos與烏克蘭2015-2016攻擊比較：波蘭針對上游小型DER，需多點同步才顯著影響。波蘭ABW警告，此類攻擊已從間諜/資料竊取轉向關鍵設施物理破壞。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> Energy, Utilities, Critical Infrastructure</li>
+        <li><strong>直接影響金融機構:</strong> 否</li>
+        <li><strong>影響中港澳台:</strong> 否</li>
+        <li><strong>風險評級:</strong> Critical</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>審核OT設備預設憑證，停用不必要網頁介面</li>
+<li>部署網路隔離與入侵檢測</li>
+<li>模擬DynoWiper攻擊進行紅隊測試</li>
+<li>優先修補RTU及裝置伺服器，強化供應鏈安全審核。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://industrialcyber.co/reports/polish-abw-warns-cyberattacks-shifting-from-espionage-and-data-theft-toward-physical-disruption-of-critical-infrastructure/" target="_blank">https://industrialcyber.co/reports/polish-abw-warns-cyberattacks-shifting-from-espionage-and-data-theft-toward-physical-disruption-of-critical-infrastructure/</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>

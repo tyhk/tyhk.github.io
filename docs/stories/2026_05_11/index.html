@@ -107,6 +107,30 @@ Anthropic Claude Code 2026/3/31 npm源碼外洩59.8MB，影響51萬用戶，駭�
     <span class="risk-badge" style="background:#dc3545">🔴 Critical</span>
     <span class="category-badge">New Cybersecurity Incident</span>
   </div>
+  <h2><a href="stories/2026_05_11/story_209.html">Sandworm攻擊波蘭電網：設備永久損壞警示</a></h2>
+  <p class="story-summary">2025年12月29日至30日，波蘭電力基礎設施遭遇近年最大規模網路攻擊，疑為俄羅斯駭客Sandworm相關組織Electrum所為，鎖定分散式能源資源（DER），標誌攻擊戰術轉向再生能源而非傳統發電廠。受害設施包括至少12至30個風力、太陽能發電場、兩座熱電共生（CHP）電廠（一處供應近50萬用戶），以及一製造公司；攻擊者入侵OT核心，禁用通訊設備、部署DynoWiper資料破壞軟體，導致部分遠端終端單元（RTU）永久損壞（Bricking），阻斷發電設施與配電系統通訊，但未造成大規模停電或電力生產中斷。
+
+調查機構差異：ESET首指Sandworm特徵（1月23日）；Dragos確認Electrum主導，視為機會主義攻擊（非精準定向），並參與一受害實體取證；CERT Polska（1月30日）公布詳細，強調逾30站點通訊失效，所有電網連接點（GCP）使用Moxa NPort 6xxx系列裝置伺服器預設帳密為漏洞，駭客還原出廠設定、改密碼、竄IP（如127.0.0.1）阻遠端存取。波蘭總理Donald Tusk（1月15日記者會）及能源部長Miłosz Motyka（1月13日）指控俄情報部門策劃，時值暴風雪低溫，若得逞恐影響50萬民眾。Dragos與烏克蘭2015-2016攻擊比較：波蘭針對上游小型DER，需多點同步才顯著影響。波蘭ABW警告，此類攻擊已從間諜/資料竊取轉向關鍵設施物理破壞。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Energy</span> <span class="ind-tag">Utilities</span> <span class="ind-tag">Critical Infrastructure</span></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>審核OT設備預設憑證，停用不必要網頁介面</li>
+<li>部署網路隔離與入侵檢測</li>
+<li>模擬DynoWiper攻擊進行紅隊測試</li>
+<li>優先修補RTU及裝置伺服器，強化供應鏈安全審核。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_209.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Critical">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#dc3545">🔴 Critical</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
   <h2><a href="stories/2026_05_11/story_93.html">波蘭五座水處理廠遭黑客入侵 關鍵基礎設施面臨威脅</a></h2>
   <p class="story-summary"># 波蘭關鍵基礎設施遭俄羅斯駭客持續攻擊綜合分析
 
@@ -624,6 +648,33 @@ San Diego市文件僅提財務審計，無網絡安全細節。企業應及早�
     </ul>
   </div>
   <a href="stories/2026_05_11/story_173.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_208.html">JDownloader官網木馬攻擊事件</a></h2>
+  <p class="story-summary">我無法完成此任務，因為搜尋結果為空。雖然您提供了一個標題「JDownloader官網被植入木馬程式」和一個連結，但系統未能成功檢索該連結的內容。
+
+要提供準確的500字以內的繁體中文綜合摘要，我需要能夠存取並分析實際的文章內容。建議您：
+
+1. **直接分享文章內容** - 將連結中的文字複製貼上
+2. **提供多個來源** - 如果有其他報導此事件的連結，一併提供
+3. **檢查連結** - 確認連結是否仍然有效
+
+一旦您提供可存取的內容，我將樂意為您提取關鍵資訊（如日期、受影響版本、安全機構名稱等），並比較不同來源的報導差異。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Software Users</span> <span class="ind-tag">Download Tools</span> <span class="ind-tag">General Internet Users</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即檢查組織內JDownloader使用情況，隔離受感染系統，掃描惡意軟體並更新防毒簽名。封鎖可疑下載來源，通知用戶避免官網下載，部署端點偵測工具監控類似供應鏈攻擊。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_208.html" class="read-more">閱讀全文 →</a>
 </article></div></section><section class="risk-section"><h3>🟡 Medium Risk</h3><div class="cards-grid">
 <article class="story-card" data-risk="Medium">
   <div class="story-header">
@@ -837,6 +888,63 @@ Inditex官方聲明（來源[2]，cmoney.tw）澄清，該資料庫不含敏感�
 <article class="story-card" data-risk="Medium">
   <div class="story-header">
     <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Best Practices / Guidelines</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_193.html">NIST更新PNT網安指南CSF 2.0版</a></h2>
+  <p class="story-summary">美國國家標準與技術研究院（NIST）於2026年5月11日發布NISTIR 8323 Rev. 2草案，修訂定位、導航與計時（PNT）服務網路安全指南，與網路安全框架（CSF）2.0對齊。此指南針對依賴PNT系統（如GPS、網路時間協定伺服器、商業計時服務及內部計時基礎設施）的組織，提供風險管理框架，涵蓋自然事件、惡意攻擊或人為失誤導致的PNT訊號與資料威脅。
+
+相較原版，新指南擴大實務建議，包括辨識PNT依賴系統、保護使用者設備免受GPS中斷、AI風險及供應鏈威脅影響；強調評估完整性與可用性門檻、辨識保障措施、了解資產降級後果，並建立偵測、回應與復原技術。指南促進負責任使用，助組織自訂措施，優先資源配置，適用於關鍵基礎設施，即使無正式網路安全計畫亦可採用。
+
+第二來源提及CSF 2.0於2023年8月9日公開草案（回饋截止11月4日），擴及全產業而非僅關鍵基礎設施，新增「治理」功能，視網路安全為企業風險首要考量，提供高階成果分類及實作範例映射資源。兩文雖獨立，前者為PNT專屬CSF 2.0應用，後者為框架基礎；無明顯報導差異，但PNT指南突出GPS干擾、AI與供應鏈獨有威脅。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Critical Infrastructure</span> <span class="ind-tag">Finance</span> <span class="ind-tag">Transportation</span> <span class="ind-tag">Government</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>審查組織PNT依賴系統，評估NISTIR 8323 Rev.2指南，更新CSF</li>
+<li>0對應風險管理計劃，識別備用PNT來源，部署異常檢測機制，於6月6日前提交公眾意見。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_193.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Best Practices / Guidelines</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_203.html">專家籲AI諮詢減速防安全風險</a></h2>
+  <p class="story-summary">根據搜尋結果分析，雖然未能直接存取指定連結，但相關資訊顯示網絡安全領域面臨重大轉變。
+
+**AI與安全的矛盾**
+澳紐地區僅12%的企業計劃近期聘用AI領導人才，而46%的企業將安全隱憂列為主要顧慮。NTT DATA研究指出，大多數企業在投資、現代化及安全方面仍然滯後，AI需求正迫使企業重新評估雲端策略。NCC Group警告AI已成為首席資訊安全官(CISO)面臨的最大網絡威脅，特別是在勒索軟體攻擊中的應用。
+
+**威脅格局演變**
+澳紐地區62%的組織將勒索軟體列為首要網絡威脅。Google警告AI正加速網絡攻擊，強調企業必須加快修補速度。國家支持的攻擊持續增加，雙重使用AI技術加劇了企業面臨的壓力。
+
+**策略轉向**
+2026年網絡安全預算正從預防和合規轉向快速回應、恢復和可證明的韌性。網絡領導者預測組織將投入更多資源於調查和恢復能力，董事會和監管機構更關注企業檢測和遏制攻擊的速度。英國董事會和公共機構被敦促從被動安全轉向主動防禦策略。
+
+**跨領域影響**
+法律、會計等專業服務機構將網絡攻擊列為2026年首要風險。跨境貿易擔憂推動AI應用，但同時延遲了業務擴張。
+
+總體而言，企業面臨在擁抱AI創新與管控其帶來的安全風險之間的平衡挑戰。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Consulting</span> <span class="ind-tag">Technology</span> <span class="ind-tag">Finance</span></span>
+    <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估組織AI諮詢項目安全風險，建立AI部署審查機制，制定減緩指南，培訓團隊識別AI相關威脅，優先監控供應鏈AI工具漏洞。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_203.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
     <span class="category-badge">Education & Talent</span>
   </div>
   <h2><a href="stories/2026_05_11/story_96.html">大學SOC模式培育資安人才，緩解全球340萬人才缺口危機</a></h2>
@@ -866,6 +974,30 @@ Inditex官方聲明（來源[2]，cmoney.tw）澄清，該資料庫不含敏感�
     </ul>
   </div>
   <a href="stories/2026_05_11/story_96.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_198.html">警方關閉Crimenetwork暗網市場</a></h2>
+  <p class="story-summary">2025年，德國與西班牙警方聯手關閉Crimenetwork暗網市場的重新上線版本，此前原平台於2024年12月已被德國Frankfurt am Main Public Prosecutor's Office（ZIT）及Federal Criminal Police Office（BKA）關閉，逮捕一名管理員，並沒收價值€1百萬加密貨幣、高價車輛及證據。原Crimenetwork自2012年起運作，擁有逾10萬用戶及100多名賣家，主要來自德語區，交易竊取資料、毒品、偽造文件等。
+
+新版本僅數日後由一名35歲德國籍男子在西班牙馬略卡島重建，吸引逾2.2萬用戶及100多名供應商，營收超€360萬（約$424萬），透過銷售佣金及月費獲利。2025年5月，西班牙調查員逮捕該男子，警方沒收€194,000（約$228,400）資產、用戶及交易資料，並與摩爾多瓦國家調查局合作挖掘線索，多數客戶位於德語國家。
+
+多來源報導一致確認事件，但細節略異：[1]強調5月逮捕及€3.6m營收；[3]聚焦原平台10萬用戶及€1m加密沒收；其他如[2]Operation Endgame（5月扣300伺服器，11月扣1025伺服器，針對Smokeloader等惡意軟體）、[4]Operation Talent（1月關Cracked/Nulled論壇，逮捕2人、€30萬沒收）及[5]12月歐洲反詐騙平台行動（逮捕27歲及37歲嫌犯），顯示德國警方2025年連串打擊，包括先前3月關Crimemarket。這些行動凸顯跨國合作趨勢，雖逮捕有限，但有效瓦解基礎設施。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">All Industries</span> <span class="ind-tag">Financial Services</span> <span class="ind-tag">Technology</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>監控暗網替代市場動態，加強內部憑證管理與洩漏檢測</li>
+<li>審核第三方供應鏈安全，部署暗網情報工具追蹤被盜數據，提升事件回應準備，優先修補高風險漏洞。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_198.html" class="read-more">閱讀全文 →</a>
 </article></div></section><section class="risk-section"><h3>🟢 Low Risk</h3><div class="cards-grid">
 <article class="story-card" data-risk="Low">
   <div class="story-header">
@@ -885,6 +1017,82 @@ Inditex官方聲明（來源[2]，cmoney.tw）澄清，該資料庫不含敏感�
     </ul>
   </div>
   <a href="stories/2026_05_11/story_197.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Low">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#28a745">🟢 Low</span>
+    <span class="category-badge">Cybersecurity Regulation & Compliance</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_192.html">大灣區數據跨境流動通報機制</a></h2>
+  <p class="story-summary">粵港澳大灣區數據跨境流動通報機制已建立，香港數字政策辦公室署理數字政策專員張宜偉於2026年5月11日立法會資訊科技及廣播事務委員會會議回覆議員勞聯林振昇查詢，確認兩地設有機制：若透過《大灣區標準合同》將資料寄存接收方，發生洩漏，接收方須通知當地機構——香港為數字政策辦公室，廣東為廣東省網信辦；雙方即時通報受影響香港市民，並依兩地法規追究責任（來源[1][2][5]）。
+
+合作框架源於2023年6月29日創新科技及工業局與國家網信辦簽署《促進粵港澳大灣區數據跨境流動的合作備忘錄》，2023年12月13日發布《粵港澳大灣區（內地、香港）個人信息跨境流動標準合同》，現擴展至各行業，香港向數字政策辦公室備案；違規可向該辦投訴舉報，與私隱專員公署有聯絡機制互相通報（來源[3][4][8]）。
+
+國家2024年3月22日公布《促進和規範數據跨境流動規定》，放寬跨境購物、支付、開戶、機票酒店預訂等場景免備案，明確重要數據出境安全評估標準及免申報情形，適用大灣區內地城市與香港，未被認定重要數據無需評估；惟國家安全或重大公眾利益數據仍有限制（來源[2][3]）。
+
+其他來源[6][7]探討內地嚴格審查機制、金融數據保護銜接差異及制度創新路徑，無新通報細節。整體一致，惟[1]獨提「及時收到通報後通知當事人」，[8]強調與私隱專員協作。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Financial Services</span> <span class="ind-tag">Technology</span> <span class="ind-tag">Healthcare</span> <span class="ind-tag">E-commerce</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>審查大灣區數據跨境合規，確認標準合同使用及備案</li>
+<li>測試內部事件通報流程，模擬跨境洩漏通知</li>
+<li>更新供應商合約，確保內地機構遵守通報機制</li>
+<li>加強員工跨境數據處理培訓。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_192.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Low">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#28a745">🟢 Low</span>
+    <span class="category-badge">M&A / Partnership in Cybersecurity</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_196.html">阿聯酋Nozomi合作強化OT/IoT網安</a></h2>
+  <p class="story-summary">阿聯酋網路安全委員會（UAE Cybersecurity Council）於2026年5月11日宣布與Nozomi Networks建立戰略聯盟，旨在強化國家關鍵基礎設施的網路安全韌性，涵蓋能源、公用事業、交通、製造及智慧基礎設施等領域。合作聚焦營運技術（OT）及物聯網（IoT）環境，提供深度可視性、先進威脅偵測及情報導向防護，應對數位轉型帶來的互聯風險。Nozomi EMEA南區副總裁Bachir Moussa表示，此舉支持阿聯酋全球網路安全領導地位，並分享OT/IoT新興威脅洞察，提升在地專業能力。（來源[1]獨有）
+
+多來源交叉提及此新聞，包括[3]、[4]、[5]、[6]、[7]，均於5月11日置頂Nozomi相關報導，無明顯差異，僅[2]為舊聞（2021年11月30日），記錄ABS Consulting與Nozomi聯盟，強化海洋及關鍵基礎設施OT/IIoT防護。
+
+其他獨有資訊：波蘭ABW報告警告（[3]，5月11日），網路攻擊從間諜及資料竊取轉向關鍵基礎設施物理破壞，常利用預設密碼或過時配置；Dragos揭露蒙特雷水務AI輔助入侵，Anthropic指中國駭客用AI主導80-90%攻擊。Rapid7（[5]）連結Chaos勒索軟體至伊朗MuddyWater間諜行動，使用Teams社工及假旗掩蓋。ENISA（[4]）擴大CVE程式，四機構加入為CNA。NIST（[6]）修訂NISTIR 8323 Rev. 2，整合CSF 2.0應對PNT服務（如GPS）風險，徵求7月6日前意見。Cybersplice（[7]）推Splice-net加密網路防範網路物理攻擊。OT安全市場預計2030年達502.9億美元，CAGR 16.5%。（總計約380字）</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">關鍵基礎設施</span> <span class="ind-tag">OT/IoT</span> <span class="ind-tag">工業控制系統</span></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估Nozomi Vantage SaaS平台是否適用本組織OT/IoT環境，比較成本與本地部署方案</li>
+<li>若有中東業務，考慮UAE區域部署以提升可視性與合規</li>
+<li>監測合作進展，優先測試Guardian感測器整合。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_196.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Low">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#28a745">🟢 Low</span>
+    <span class="category-badge">M&A / Partnership in Cybersecurity</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_200.html">西門子阿聯酋網安合作夥伴關係</a></h2>
+  <p class="story-summary">西門子與阿聯酋網路安全委員會（UAE Cyber Security Council）於2026年5月11日簽署合作備忘錄（MoU），旨在深化網路安全領域合作，提升阿聯酋整體網路韌性。該協議聚焦關鍵基礎設施保護、數位轉型安全及聯合研發，雙方將共享威脅情報、舉辦培訓工作坊，並推動標準化認證。
+
+報導獨有細節包括：Siemens將提供工業物聯網（IIoT）安全解決方案，針對能源與製造業；UAE Cyber Security Council強調此為國家網路安全戰略一部分，預計涵蓋500多家企業參與試點。無其他來源比較，本連結為唯一報導，無明顯差異。合作將於2026下半年啟動首波專案，強化中東地區防禦能力。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">工業控制系統</span> <span class="ind-tag">關鍵基礎設施</span> <span class="ind-tag">製造業</span></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估西門子網安解決方案適用性，探索類似區域合作機會</li>
+<li>審核供應鏈夥伴資安標準，強化IT/OT融合防護</li>
+<li>追蹤合作進展，更新企業網安治理框架。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_200.html" class="read-more">閱讀全文 →</a>
 </article></div></section>
   </main>
   <footer>
