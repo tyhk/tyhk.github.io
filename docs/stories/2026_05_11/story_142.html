@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>駭客假OpenClaw散布竊資木馬與代理</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>駭客假OpenClaw散布竊資木馬與代理</h1>
+    <div class="story-tags">
+      <span class="risk-badge">High</span>
+      <span class="category-badge">New Cybersecurity Incident</span>
+    </div>
+    <div class="story-body">
+      <p>威脅研究機構ThreatLabz與Gurucul揭露，駭客利用OpenClaw框架的「skill」架構，開發惡意技能作為初始入侵載體，自動或手動執行後分兩路徑攻擊：Windows環境濫用合法簽署的GoToMeeting執行檔側載shellcode載入器，動態修補ETW與AMSI防護，使用TEA-CBC解密Remcos RAT木馬，建立TLS加密C2通道，監控鍵盤、剪貼簿、瀏覽器SQLite資料庫竊取會話Cookie，繞過MFA並提供反向殼；macOS/Linux則部署高度混淆Node.js載入GhostLoader跨平台資訊竊取器，鎖定開發者環境資料外洩。動機為財務獲利與持久存取，具監控、憑證竊取、螢幕擷取能力。
+
+多來源交叉報導一致強調OpenClaw技能隱藏於合法生態，ThreatLabz詳述攻擊鏈（圖1），Gurucul命名情報「Malicious openclaw skill distributes remcos rat and ghostloader」，無明顯差異。Cybersecurity Insiders相關文章提及此案於2026年Q1脈絡，黑霧（BlackFog）研究同期記錄全球數千勒索攻擊，僅1/9公開，Qilin群組339隱藏案最兇，其餘ShinyHunters（16公開）、INC（11）、The Gentlemen（200隱藏）、Akira（190）；另揭Claude Code源碼外洩遭GitHub偽裝開發者散布惡意軟體，獲星標提升可信度。整體凸顯AI驅動攻擊加速，Gen AI助自動化釣魚與漏洞利用，傳統SOAR落後，Agentic SOC成趨勢，Chrome資料（如密碼、Cookie）易遭帳戶關聯、側向移動濫用。政府資安官員坦言未備AI威脅，偵測窗縮短。（約380字）</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> All Industries, Financial Services, Cryptocurrency</li>
+        <li><strong>直接影響金融機構:</strong> 是</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> High</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <p>立即掃描GitHub/ClawHub套件來源，阻擋OpenClaw相關惡意域名，部署EDR監控Vidar/AMOS/GhostSocks，限制搜尋引擎下載，強制雙因素驗證並審核AI代理權限。</p>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://www.cybersecurity-insiders.com/malicious-openclaw-skill-distributes-remcos-rat-and-ghostloader/" target="_blank">https://www.cybersecurity-insiders.com/malicious-openclaw-skill-distributes-remcos-rat-and-ghostloader/</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>
