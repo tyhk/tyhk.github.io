@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伊朗MuddyWater假冒Chaos勒索軟件間諜攻擊</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>伊朗MuddyWater假冒Chaos勒索軟件間諜攻擊</h1>
+    <div class="story-tags">
+      <span class="risk-badge">High</span>
+      <span class="category-badge">Cyber Threat Intelligence / APT Reports</span>
+    </div>
+    <div class="story-body">
+      <p># Rapid7：Chaos勒索軟體與伊朗MuddyWater關聯分析
+
+Rapid7於2026年5月6日發布報告《Muddying the Tracks: The State-Sponsored Shadow Behind Chaos Ransomware》，揭露一起2026年初的入侵事件實為伊朗政府支持的MuddyWater（又名Seedworm、Static Kitten、Mango Sandstorm）所策劃的虛假旗幟行動。該組織隸屬於伊朗情報安全部（MOIS），藉由冒充Chaos勒索軟體附屬機構來掩蓋地緣政治間諜活動。
+
+攻擊始於Microsoft Teams社交工程，攻擊者透過螢幕共享與員工互動，進行認證資訊竊取、MFA操縱，並快速轉向使用合法帳戶進行內部存取。受害者被誘騙將密碼輸入本地文件（credentials.txt、cred.txt），並修改MFA設定以包含攻擊者控制的設備。
+
+技術指標顯示MuddyWater的特徵包括：使用代碼簽署憑證「Donald Gay」驗證惡意軟體、moonzonet[.]com C2基礎設施、pythonw.exe程式碼注入技術，以及互動式Teams會話進行認證竊取。Rapid7以中等信心度將此事件歸因於MuddyWater。
+
+值得注意的是，攻擊者繞過傳統勒索軟體工作流程，未進行檔案加密，而是專注於資料外洩與透過DWAgent和AnyDesk等遠端管理工具建立長期持久性。儘管發布了竊取的資料進行勒索，但主要目標顯然是間諜活動而非財務獲利。
+
+MuddyWater過往曾在2025年底針對以色列組織使用Qilin勒索軟體進行類似偽裝。此次轉向Chaos品牌可能是為進一步降低歸因風險。該策略反映國家贊助入侵活動與犯罪手法的融合，利用勒索軟體掩蓋真實的網路間諜目標。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> 政府, 電信, 石油, 企業, 美國, 西方國家, APAC, 中東</li>
+        <li><strong>直接影響金融機構:</strong> 是</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> High</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>檢查Teams/AnyDesk/DWAgent等遠程工具濫用</li>
+<li>審核MFA配置及憑證文件(credentials.txt)</li>
+<li>監測可疑C2如adm-pulse[.]com</li>
+<li>強化社交工程防護，模擬vishing訓練</li>
+<li>審計桌面目錄及瀏覽器偽造檔案</li>
+<li>啟動威脅狩獵追蹤持久化機制。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://industrialcyber.co/ransomware/rapid7-links-chaos-ransomware-campaign-to-iranian-state-sponsored-muddywater-espionage-operation/" target="_blank">https://industrialcyber.co/ransomware/rapid7-links-chaos-ransomware-campaign-to-iranian-state-sponsored-muddywater-espionage-operation/</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>

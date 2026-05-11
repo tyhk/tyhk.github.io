@@ -135,6 +135,182 @@ TVB新聞報導，至少五間機構通報資料外洩；另一則指CSIRT確認
 <article class="story-card" data-risk="High">
   <div class="story-header">
     <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Cybersecurity Regulation & Compliance</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_195.html">ENISA強化漏洞協調機制：2026年9月起強制報告已利用漏洞</a></h2>
+  <p class="story-summary">ENISA於2026年5月11日加強歐盟漏洞協調，四組織加入ENISA Root下的CVE Program，提升歐盟漏洞管理（來源1、2、3、4、5、8、9皆提及此頭條）。UAE網路安全委員會與Nozomi Networks聯盟，建立阿布達比OT/IoT創新卓越中心，強化能源、交通等關鍵基礎設施威脅偵測與情報分享（來源1獨有）。Tosi報告顯示，2026年4月8日美國77家企業OT安全成熟度平均35.9/50達「管理級」（Level 4），18%達最高「最佳化級」，資產可見度強但供應商遠端存取為弱點，水務業受EPA與CISA壓力表現突出（來源2獨有）。Rapid7於同日揭露Chaos勒索軟體攻擊實為伊朗MuddyWater（Seedworm）間諜行動，使用Teams社工、AnyDesk持久化及「Donald Gay」憑證偽裝，重點竊取資料而非加密（來源3獨有）。OT威脅偵測推「已知-未知矩陣」，引用NVD、CVE、MITRE ATT&CK ICS及ICS Advisory Project（來源4獨有）。NIST發布NISTIR 8323 Rev.2草案，依CSF 2.0更新PNT服務指南，應對GPS中斷、AI與供應鏈風險（來源5獨有）。Unit 42於2025年8月5日曝光CL-STA-0969入侵西南亞電信，針對行動漫遊網（來源6獨有）。Turing報告分析2020-2024 NVD CVE，DPI領域（如數位身份）常見CWE需跨域監控，強調內網與設計安全（來源7獨有）。美國海岸警衛隊發MTSA法規網路安全FAQ，指導船隻與設施合規（來源8獨有）。整體趨勢聚焦OT/IoT成熟、國家聯盟與國家威脅偽裝。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">電信</span> <span class="ind-tag">ICT製造</span> <span class="ind-tag">關鍵基礎設施</span> <span class="ind-tag">金融服務</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估組織產品是否受CRA約束，制定漏洞報告流程</li>
+<li>建立與ENISA單一報告平台(SRP)的對接機制，準備2026年9月前的合規準備</li>
+<li>更新漏洞管理政策，確保已利用漏洞的及時上報</li>
+<li>加強與歐盟CSIRT網絡的協調溝通</li>
+<li>評估供應鏈中高風險供應商的替代方案。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_195.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Cyber Threat Intelligence / APT Reports</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_194.html">伊朗MuddyWater假冒Chaos勒索軟件間諜攻擊</a></h2>
+  <p class="story-summary"># Rapid7：Chaos勒索軟體與伊朗MuddyWater關聯分析
+
+Rapid7於2026年5月6日發布報告《Muddying the Tracks: The State-Sponsored Shadow Behind Chaos Ransomware》，揭露一起2026年初的入侵事件實為伊朗政府支持的MuddyWater（又名Seedworm、Static Kitten、Mango Sandstorm）所策劃的虛假旗幟行動。該組織隸屬於伊朗情報安全部（MOIS），藉由冒充Chaos勒索軟體附屬機構來掩蓋地緣政治間諜活動。
+
+攻擊始於Microsoft Teams社交工程，攻擊者透過螢幕共享與員工互動，進行認證資訊竊取、MFA操縱，並快速轉向使用合法帳戶進行內部存取。受害者被誘騙將密碼輸入本地文件（credentials.txt、cred.txt），並修改MFA設定以包含攻擊者控制的設備。
+
+技術指標顯示MuddyWater的特徵包括：使用代碼簽署憑證「Donald Gay」驗證惡意軟體、moonzonet[.]com C2基礎設施、pythonw.exe程式碼注入技術，以及互動式Teams會話進行認證竊取。Rapid7以中等信心度將此事件歸因於MuddyWater。
+
+值得注意的是，攻擊者繞過傳統勒索軟體工作流程，未進行檔案加密，而是專注於資料外洩與透過DWAgent和AnyDesk等遠端管理工具建立長期持久性。儘管發布了竊取的資料進行勒索，但主要目標顯然是間諜活動而非財務獲利。
+
+MuddyWater過往曾在2025年底針對以色列組織使用Qilin勒索軟體進行類似偽裝。此次轉向Chaos品牌可能是為進一步降低歸因風險。該策略反映國家贊助入侵活動與犯罪手法的融合，利用勒索軟體掩蓋真實的網路間諜目標。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">政府</span> <span class="ind-tag">電信</span> <span class="ind-tag">石油</span> <span class="ind-tag">企業</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>檢查Teams/AnyDesk/DWAgent等遠程工具濫用</li>
+<li>審核MFA配置及憑證文件(credentials.txt)</li>
+<li>監測可疑C2如adm-pulse[.]com</li>
+<li>強化社交工程防護，模擬vishing訓練</li>
+<li>審計桌面目錄及瀏覽器偽造檔案</li>
+<li>啟動威脅狩獵追蹤持久化機制。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_194.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_206.html">Canvas平台遭ShinyHunters入侵9000院校</a></h2>
+  <p class="story-summary">Canvas教學管理平台遭黑客入侵，全球約9,000間教育機構受影響，包括美國哈佛、史丹佛大學。本港至少5間院校通報資料外洩，私隱專員公署截至5月8日下午6時接獲報告，初步洩露師生姓名、電郵等個人資料。生產力局香港網絡安全事故協調中心今日（11日）記者會公布，主動聯絡受影響院校，提醒防範後續釣魚、冒充攻擊，並以AI掃描相關釣魚網站。黎少斌指，平台含師生資料，呼籲開啟連結前檢查代碼，避免「點水不漏」陷阱。
+
+受影響本港機構：香港科技大學、香港理工大學、香港演藝學院、香港專業進修學校、香港教育城（大公報列5間，信報僅提院校，經濟日報同樣強調5間）。供應商Instructure早於4月遭ShinyHunters勒索軟件攻擊，迅速恢復營運，但上周四（7日）再度入侵（大紀元獨提）。
+
+三源比較：大紀元詳列院校名及ShinyHunters歷史；經濟日報強調「滴水不漏」解密案例及AI防禦；大公報重複5院校，無獨有數字；信報聚焦後續釣魚風險，無新機構。整體一致，無重大衝突，事件凸顯教育平台資安漏洞，師生宜加強警惕。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">教育</span></span>
+    <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即評估Canvas使用情況，停用並切換替代平台</li>
+<li>強制所有用戶啟用2FA、更換密碼</li>
+<li>監測釣魚攻擊與異常登入</li>
+<li>通知受影響用戶檢查資料外洩</li>
+<li>審核第三方SaaS供應商安全。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_206.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_207.html">Canvas黑客入侵：香港院校3.65TB數據外洩</a></h2>
+  <p class="story-summary">Canvas學習管理平台遭黑客組織ShinyHunters入侵，影響全球約8,809-9,000間教育機構、逾2.75億用戶，竊取3.65TB資料，包括姓名、電郵地址、學生編號、帳戶/學歷/成績及用戶訊息，暫無密碼或財務資料外洩。母公司Instructure於5月1-7日察覺漏洞（Free-For-Teacher帳戶），5月7日用戶登入見勒索警告，要求5月12日前談判贖金，否則公開資料；平台一度關閉後恢復（SecurityWeek獨報）。
+
+香港私隱專員公署9-10日接5院校通報：香港理工大學（42,000師生，姓名/電郵）；香港建造學院（2,500師生，姓名/電郵/課程）；香港科技大學（姓名/電郵/帳戶/學歷，人數未定）；香港演藝學院（姓名/電郵/學生編號/成績，人數未定）；香港教育城（姓名/電郵/學生編號，人數未定）。總逾4.4萬人受影響，HKCERT及網絡安全中心警告師生防釣魚電郵/短訊、社交工程（如假招生/折扣/暑工），及人身/身份風險，建議啟用雙重認證。
+
+ETtoday/Unwire/RTHK/HK01/STHeadline一致報全球規模及港5院校，TVB/OrangeNews/HK01強調二次詐騙；Unwire獨提ShinyHunters二度入侵及市場佔41%、3,000萬活躍用戶，為2026年最大教育攻擊。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">教育</span></span>
+    <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即檢查機構是否使用Canvas，通知受影響師生更改密碼並啟用2FA</li>
+<li>監控釣魚攻擊與異常登入</li>
+<li>審核第三方平台安全合規</li>
+<li>聯繫供應商索取詳細事件報告並評估補救措施。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_207.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Scam Modus Operandi</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_204.html">台灣電話轉接詐騙規避警示新手法</a></h2>
+  <p class="story-summary"># 台灣詐騙集團轉接技術升級分析
+
+## 綜合摘要
+
+台灣刑事局近期破獲多起利用電話轉接技術規避防詐警示的詐騙案件，顯示詐團手法已大幅升級。
+
+**核心詐騙手法演變：**
+詐騙集團為規避政府與電信業者合作推動的「+886」國際來電7秒語音警示系統，研發出「繞道轉接」新招。他們利用網路電話從境外進線，先竄改發話號碼連接到國內「人頭門號」，再設定「指定轉接」功能將詐騙電話轉給被害人，使被害人完全聽不到防詐警示，誤以為是國內正常來電。
+
+**重點案例：**
+刑事局電信偵查大隊於2024年9月25日在台中七期高級商辦攻堅，逮捕游姓主嫌等4人。該機房詐騙9名被害人，詐騙金額高達1,500萬元。詐團成員冒充國家通訊傳播委員會、中華電信等公務機關，謊稱被害人遭冒名申辦門號涉及詐欺案，再假冒檢警以代管財產名義誘騙交付財物。
+
+**最新升級手法：**
+詐團已進化至「金融接管」模式。新北市劉姓上班族今年1月遭詐，詐團誘導其輸入「**21*」指令加上指定門號完成來電轉接設定，將通訊權限完全移交詐團。此舉使銀行查證電話直接落入詐團手中，防護機制全面失效，導致被害人股票遭盜賣損失百萬元。
+
+**警方提醒：**
+司法機關絕不會要求民眾設定來電轉接或提供網銀密碼。民眾應警惕輸入「**21*」或下載不明App等關鍵紅線，可撥打165反詐騙專線查詢。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Financial Services</span> <span class="ind-tag">Telecommunications</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即教育員工識別**21*轉接及不明APP要求</li>
+<li>部署來電警示工具監控異常轉接</li>
+<li>強化多因素驗證防範金融接管</li>
+<li>與電信商合作阻擋人頭門號</li>
+<li>定期模擬釣魚演練提升警覺。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_204.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Scam Modus Operandi</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_205.html">eSIM交換攻擊出國資安風險警示</a></h2>
+  <p class="story-summary">台灣數發部資安署針對國人年節赴中國旅遊或公務差勤，發布手機使用7大資安風險警示（iThome 2025/1報導），首推國內電信原號國際漫遊（加密傳輸較安全），避免中國實名制SIM卡或eSIM（暴露身分、位置、網路活動於監控，如《網路安全法》），公務員建議飛航模式僅必要連網；其他風險含避公共WiFi、公共USB充電（防Juice Jacking）、手機離身或檢查後返國重置系統（udn、壹蘋、自由時報2026/2報導）。
+
+獨立研究顯示，廉價海外eSIM（如Airalo、Holafly）流量常經中國路由：USENIX Security Symposium 2024論文實測25家業者，Holafly歐洲使用IP（223.118.51.96）屬中國移動國際香港，導致OpenAI、Anthropic、Google封鎖AI服務（人在巴黎IP卻香港）；改APN切新加坡僅騙AI，元資料仍中國系統，eSIM靜默連伺服器收發簡訊（Line Today、udn tech 2026報導，cacaFly邱繼弘警示）。台灣工程師出差日韓歐美常遇ChatGPT/Claude拒服，以為WiFi不穩實為eSIM路由問題。
+
+綜合差異：資安署聚焦中國本地eSIM，研究擴及全球廉價eSIM中國封包風險；通用建議用自備行動電源、慎公共網，eSIM雖多重安全優於實體SIM，但高風險區仍不宜（thebitjoy）。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Telecommunications</span> <span class="ind-tag">Travel</span> <span class="ind-tag">Financial Services</span> <span class="ind-tag">Government</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即審查eSIM供應商安全協議，強制2FA及帳戶綁定生物識別</li>
+<li>教育員工識別SIM交換攻擊社交工程</li>
+<li>部署移動設備管理(MDM)監控eSIM異常轉移</li>
+<li>高風險用戶轉用硬體安全金鑰</li>
+<li>與電信商建立緊急SIM恢復流程。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_205.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
     <span class="category-badge">New Cybersecurity Incident</span>
   </div>
   <h2><a href="stories/2026_05_11/story_122.html">FBI警告俄駭入侵路由器，CISO速加固</a></h2>
@@ -451,6 +627,51 @@ Inditex官方聲明（來源[2]，cmoney.tw）澄清，該資料庫不含敏感�
     </ul>
   </div>
   <a href="stories/2026_05_11/story_176.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">M&A / Partnership in Cybersecurity</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_181.html">澳洲與薩摩亞簽署網絡安全合作備忘錄，投入200萬澳元強化區域防禦</a></h2>
+  <p class="story-summary">澳洲政府積極強化AI與網絡安全布局，並擴大南太平洋區域合作。2025年11月25日，澳洲宣布2026年初設立AI安全研究所（AI Safety Institute），由資訊工業策進會科技法律研究所報導，其目標為監管、測試AI技術風險，提供政府與民眾保護，業務包括辨識危害、調整法律框架與跨部門協調（來源[1]）。
+
+在網絡安全領域，澳洲情報部門澳洲訊號局（ASD）獲13.5億澳元（約13.5億元）10年撥款，聘請500名網絡保安專家，防範惡意攻擊（來源[2]）。2026年2月24日，澳洲與薩摩亞簽署網絡安全合作備忘錄（MOU），強化雙邊網絡事務合作（來源[3]），延續澳洲長期南太安全策略，如2019年成立太平洋支援部隊（Pacific Support Force）及澳洲太平洋安全學院，針對巴紐、斐濟、萬那杜等，提供巡邏艇、海底電纜（Vocus公司獲1.36億澳元）及900萬澳元4年網絡合作夥伴關係（來源[4]、[7]）。
+
+澳洲2023-2030年網絡安全戰略旨在成為全球最安全國家（來源[6]）。其他來源提及香港關鍵基礎設施條例（架構責任、電腦系統安全計劃、滲透測試；來源[5]）及海外抗封域名服務（來源[8]），但無直接關聯。無來源明確報導「澳洲將在薩摩亞設立網絡安全顧問」，惟薩摩亞MOU可能涵蓋顧問形式合作，與澳洲南太援助模式一致。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">政府</span> <span class="ind-tag">關鍵基礎設施</span> <span class="ind-tag">金融服務</span> <span class="ind-tag">電信</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估區域網絡威脅情報共享機制對本組織的適用性</li>
+<li>關注澳洲-薩摩亞合作框架中的安全標準與最佳實踐</li>
+<li>若涉及跨境數據流動，需審視數據保護合規性</li>
+<li>考慮參與SEA PAC網絡發展援助計畫以提升區域防禦能力。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_181.html" class="read-more">閱讀全文 →</a>
+</article></div></section><section class="risk-section"><h3>🟢 Low Risk</h3><div class="cards-grid">
+<article class="story-card" data-risk="Low">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#28a745">🟢 Low</span>
+    <span class="category-badge">M&A / Partnership in Cybersecurity</span>
+  </div>
+  <h2><a href="stories/2026_05_11/story_197.html">阿聯酋ATRC推進量子安全國家部署</a></h2>
+  <p class="story-summary">阿聯酋網路安全委員會（UAE Cyber Security Council）於2026年5月11日宣布與ATRC合作，加速量子安全轉型。根據techafricanews.com報導，此合作聚焦部署主權網路安全技術，強化國家級量子抗性防護，應對量子運算對傳統加密的威脅。ATRC作為合作方，強調透過此聯盟快速推動本土化量子安全解決方案實施，無提及具體數字或時間表。報導獨家指出，此舉為UAE首個官方量子安全加速計畫，預計涵蓋政府與關鍵基礎設施。惟僅一來源，無差異比較。整體凸顯UAE在量子時代的領先布局，強化數位主權。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Government</span> <span class="ind-tag">Critical Infrastructure</span> <span class="ind-tag">Finance</span> <span class="ind-tag">Telecom</span></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>評估組織後量子遷移準備，審核加密資產，使用Crypto Discovery Tool識別弱點，制定PQC遷移路線圖，監測NIST標準更新，優先保護長期數據。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_11/story_197.html" class="read-more">閱讀全文 →</a>
 </article></div></section>
   </main>
   <footer>
