@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux内核Copy Fail & Dirty Frag双漏洞提权危机</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>Linux内核Copy Fail & Dirty Frag双漏洞提权危机</h1>
+    <div class="story-tags">
+      <span class="risk-badge">Critical</span>
+      <span class="category-badge">Newly Discovered Vulnerability or Exploit</span>
+    </div>
+    <div class="story-body">
+      <p>Linux内核近期爆發重大安全漏洞危機。首個為「CopyFail」（CVE-2026-31431），由Theori研究團隊揭露，為9年老漏洞（自2017年起），影響幾乎所有主流Linux發行版，包括Ubuntu 24.04 LTS、Amazon Linux 2023、RHEL 10.1、SUSE 16及Rocky Linux 9.7。漏洞位於内核複製機制，無需競爭條件即可可靠本地權限提升（LPE），PoC腳本微小、無痕跡、不改檔案、不依賴額外軟體，甚至可逃脫容器隔離。4月30日公布，5月4日CISA列入已知利用漏洞目錄，命令美國聯邦機構於5月15日前修補。Debian、Ubuntu、AlmaLinux、SUSE、Fedora、CloudLinux已出補丁，RHEL用戶仍待修補。
+
+僅兩週後，第二漏洞「Dirty Frag」曝光（來源[3]，The Record報導），位於CopyFail相同内核區域，同樣允許低權限用戶輕鬆利用，為兩週內第二重大LPE bug，細節尚未全揭。
+
+其他來源提及相關内核更新，如Miracle Linux kernel-5.14.0-570.12.1.el9_6（エラータID: AXSA:2025-10392:38），修補多項CVE（如CVE-2024-36013藍牙、CVE-2024-43871 devres等），但未直接涉及CopyFail。Hacker News討論供應鏈攻擊風險，Spotify播客提及Arch Linux等動態。整體凸顯Linux内核供應鏈與老漏洞威脅，呼籲即時更新。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> Cloud Computing, Enterprise IT, Financial Services, Government, Telecom</li>
+        <li><strong>直接影響金融機構:</strong> 是</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> Critical</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>立即檢查Linux内核版本，優先修補CVE-2026-31431及Dirty Frag</li>
+<li>隔離受影響容器/Pod</li>
+<li>部署自動化掃描工具監測PoC利用</li>
+<li>升級至最新安全補丁，啟用SELinux/AppArmor強化</li>
+<li>進行緊急安全審計並通知相關團隊。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug" target="_blank">https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>
