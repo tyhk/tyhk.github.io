@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Encrypt暫停憑證簽發 全球HTTPS服務面臨中斷風險</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>Let's Encrypt暫停憑證簽發 全球HTTPS服務面臨中斷風險</h1>
+    <div class="story-tags">
+      <span class="risk-badge">High</span>
+      <span class="category-badge">Product / Solution Updates</span>
+    </div>
+    <div class="story-body">
+      <p>Let’s Encrypt 已於 2026 年 5 月 8 日暫停所有憑證發行，主因是工程師發現與「交叉簽署根憑證」（cross‑signed root certificate）相關的嚴重問題，導致系統必須立即中止簽發新證書以避免潛在風險。根據 Cybersecurity News 的報導，此次停發屬於「暫時性」措施，並未說明確切恢復時間，但強調事件與根憑證的信任鏈異常有關，可能影響憑證的驗證與有效性。同一來源指出，Let’s Encrypt 已啟動內部調查與修復流程，並建議使用者密切關注官方公告，以取得最新狀態與後續指引。
+
+此外，另一篇 Cybersecurity News 的 SSL 憑證專欄文章同樣提及此次「因交叉簽署根憑證事件而暫停發行」，但側重於事件對整體 SSL 生態的衝擊，例如自動化憑證更新流程可能中斷、部分網站與服務在到期前無法取得新證書，進而增加到期風險。該文也提醒系統管理員應檢查現有憑證到期日，並預備替代憑證來源或手動更新機制，以降低服務中斷機率。
+
+與此同時，SecurityOnline 的報導則聚焦在 Let’s Encrypt 未來的憑證政策調整，指出該機構正逐步縮短憑證有效期限，預計在 2028 年前將憑證壽命上限壓縮至 45 天，並逐步淘汰 mTLS（雙向 TLS）相關功能，以提升整體安全性與憑證輪替頻率。雖然此報導未直接說明 5 月 8 日停發事件的技術細節，但可視為 Let’s Encrypt 在事件後強化安全策略的一部分，顯示其對憑證生命週期管理與信任鏈控制的長期方向。綜合來看，此次停發既是對特定根憑證問題的緊急回應，也與其長期縮短憑證壽命、強化自動化與安全控管的整體策略相互呼應。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> Web Services, E-commerce, Financial Services, Healthcare, Government, SaaS Providers, CDN/Cloud Infrastructure</li>
+        <li><strong>直接影響金融機構:</strong> 是</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> High</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>盤點所有依賴Let's Encrypt憑證的系統</li>
+<li>檢查現有憑證有效期，優先續約即將過期者</li>
+<li>評估備用CA方案(如Sectigo、DigiCert)</li>
+<li>建立憑證監控告警機制，補償官方停止通知</li>
+<li>與IT團隊制定應急預案，確保服務連續性</li>
+<li>考慮多CA策略降低單點風險。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://cybersecuritynews.com/lets-encrypt-halts-certificate-issuance/" target="_blank">https://cybersecuritynews.com/lets-encrypt-halts-certificate-issuance/</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>

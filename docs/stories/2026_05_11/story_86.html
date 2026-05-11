@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirty Frag漏洞影響主流Linux獲Root</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月11日</p>
+    <h1>Dirty Frag漏洞影響主流Linux獲Root</h1>
+    <div class="story-tags">
+      <span class="risk-badge">Critical</span>
+      <span class="category-badge">Newly Discovered Vulnerability or Exploit</span>
+    </div>
+    <div class="story-body">
+      <p>Linux内核“Dirty Frag”本地提权漏洞近日曝光，由韩国资安研究员Hyunwoo Kim发现并公开PoC。该漏洞链结合xfrm-ESP模块（自commit cac2661c53f3起）和RxRPC模块（自commit 2dc334f1a63a起）两个页缓存写入缺陷，无需竞争条件或命名空间权限，仅一条命令即可让非特权用户获root权限，影响2017年后几乎所有主流发行版。
+
+来源[1]（腾讯云，2026年5月）详述漏洞机制：xfrm-ESP允许向任意可读文件（如setuid二进制）页缓存写4字节受控数据，RxRPC无需默认加载即可触发；影响Ubuntu 24.04.4、RHEL 10、CentOS 10、AlmaLinux 10、Fedora 44、openSUSE Tumbleweed；暂无CVE编号，高风险，呼吁立即排查。
+
+[2]（iThome，5月8日）强调低权限用户直接root，Hyunwoo Kim首公开漏洞链。
+
+[3]（BigGo财经，2026年5月10日）突出自2017年起“绝大多数”Linux系统瞬间root，截至报道无补丁，紧急性最高。
+
+[4]（CSDN）指algif_aead加密接口漏洞，一命令root主流版，与[1]重合但强调加密接口。
+
+LinkedIn链接（标题：Warning New Critical Linux Vulnerability Dirty）疑为英文预警，补充“critical”评级，但无独特细节。多源一致无补丁，差异在影响范围（[1]最详尽具体版本）和日期（[2]最早5/8），均无官方CVE，建议用户禁用模块或等补丁。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> Servers & Cloud, Enterprise IT, Financial Services, Government</li>
+        <li><strong>直接影響金融機構:</strong> 是</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> Critical</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>立即檢查系統内核版本，確認是否受影響</li>
+<li>部署暫時性緩解措施如禁用xfrm-ESP及RxRPC模組</li>
+<li>優先修補關鍵伺服器</li>
+<li>監控POC攻擊活動</li>
+<li>通知相關團隊評估暴露資產並制定應急響應計劃。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/pulse/warning-new-critical-linux-vulnerability-dirty-nn4re" target="_blank">https://www.linkedin.com/pulse/warning-new-critical-linux-vulnerability-dirty-nn4re</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>
