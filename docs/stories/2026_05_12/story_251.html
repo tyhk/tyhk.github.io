@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fsnotify維護者變更引供應鏈安全疑慮</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav><a href="../../index.html">← 返回摘要</a></nav>
+    </div>
+  </header>
+  <main class="container story-page">
+    <p class="back-date">2026年05月12日</p>
+    <h1>fsnotify維護者變更引供應鏈安全疑慮</h1>
+    <div class="story-tags">
+      <span class="risk-badge">Medium</span>
+      <span class="category-badge">Newly Discovered Vulnerability or Exploit</span>
+    </div>
+    <div class="story-body">
+      <p>廣受歡迎的Go語言函式庫fsnotify因維護者存取權突然變更，引發供應鏈安全警報。Cybersecurity News於2026年5月11日報導，此庫廣泛應用於開發工具與CI/CD管道，變更事件震驚開發社群，可能帶來供應鏈攻擊風險（來源[1][2][3][4][5][6][7][8][9]）。該庫被數百萬專案依賴，任何惡意修改恐波及下游軟體。
+
+多來源重複提及此事件，但無獨家細節差異；[2]強調其在開發者管道的關鍵角色，[3]連結TanStack npm套件駭客事件，[4]提及ForceMemo惡意軟體自2026年3月8日起感染數百GitHub Python儲存庫（含Django、ML、Flask專案），由GlassWorm竊取憑證，利用force-push覆寫歷史，並以Solana區塊鏈備忘錄作C2通道，影響BierOne等帳戶6個儲存庫。[6]揭Apache Syncope XXE漏洞（CVE-2026-23795，CVSS 6.5），影響3.0-3.0.15及4.0-4.0.3版，允許管理員資料外洩與會話劫持，已修補至3.0.16/4.0.4。[7]指WordPress User Registration插件CVE-2026-1492（CVSS 9.8），5.1.2版前皆易遭認證繞過獲管理權，CYFIRMA於3月3日公布。[8]報WormGPT資料庫外洩，19,000用戶電郵、ID、計費資料曝光，自2023年起售於暗網，用於釣魚與惡意程式碼生成。
+
+其他如[5]Security Onion開源IDS工具，無直接關聯。整體凸顯2026年供應鏈攻擊激增，開發者須審核依賴與憑證安全。</p>
+    </div>
+    <section class="impact-section">
+      <h3>📊 影響分析</h3>
+      <ul>
+        <li><strong>受影響行業:</strong> 軟體開發, 雲服務, 系統安全</li>
+        <li><strong>直接影響金融機構:</strong> 否</li>
+        <li><strong>影響中港澳台:</strong> 是</li>
+        <li><strong>風險評級:</strong> Medium</li>
+      </ul>
+    </section>
+    <section class="action-section">
+      <h3>🎯 CISO 應對行動</h3>
+      <ul class="action-list">
+        <li>審核fsnotify依賴版本，檢查維護者變更日誌</li>
+<li>評估替代庫如watchexec</li>
+<li>運行供應鏈掃描工具如Trivy</li>
+<li>若關鍵系統使用，立即升級並監控fsnotify事件異常。</li>
+      </ul>
+    </section>
+    <section class="sources-section">
+      <h3>🔗 原始來源</h3>
+      <ul>
+        <li><a href="https://cybersecuritynews.com/popular-go-library-fsnotify-raises-supply-chain/" target="_blank">https://cybersecuritynews.com/popular-go-library-fsnotify-raises-supply-chain/</a></li>
+      </ul>
+    </section>
+    <p class="generated">© Tony Yu. All rights reserved.</p>
+  </main>
+</body>
+</html>
