@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hong Kong CISO Watch — 2026年05月13日</title>
+  <title>Hong Kong CISO Watch — 2026年05月14日</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,146 +13,850 @@
         <a href="archive.html">📅 存檔</a>
       </nav>
       <h1>🛡️ Hong Kong CISO Watch</h1>
-      <p class="date">2026年05月13日</p>
-      <div class="date-nav"><span>其他日子：</span><ul><li><a href="stories/2026_05_14/index.html">05/14</a></li></ul></div>
+      <p class="date">2026年05月14日</p>
+      <div class="date-nav"><span>其他日子：</span><ul><li><a href="stories/2026_05_13/index.html">05/13</a></li></ul></div>
     </div>
   </header>
   <main class="container">
     <p class="intro">本專頁每天分析網絡安全新聞，專為 CISO 及資安從業員而設。</p>
-    <section class="risk-section"><h3>🟠 High Risk</h3><div class="cards-grid">
-<article class="story-card" data-risk="High">
+    <section class="risk-section"><h3>🔴 Critical / High Risk</h3><div class="cards-grid">
+<article class="story-card" data-risk="Critical">
   <div class="story-header">
-    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
-    <span class="category-badge">Cyber Espionage & Nation-State</span>
+    <span class="risk-badge" style="background:#dc3545">🔴 Critical</span>
+    <span class="category-badge">Emerging Technology Risk</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_3.html">國際黑客瞄準香港基建 警示CISO</a></h2>
-  <p class="story-summary">香港警方發布《網絡安全報告2025》，指網絡安全形勢嚴峻。網罪科全年處理約3,500萬項威脅情報，其中逾154萬項針對香港（按年增2.4倍）。情報關聯分析發現5個在國際間惡名昭彰的黑客團夥，長期／惡意針對本港重要基礎設施（critical infrastructure），包括政府、航空運輸、陸路運輸、海運、銀行及金融服務、廣播、通訊、能源、醫療保健及公共事業等。警方透過網絡安全行動中心聯盟（SOCA）、HKCERT等渠道進行情報分享和跨機構合作，及時向本地重要基建及大型機構發出通報，使相關攻擊企圖在早期被識別和遏止，未造成服務中斷或重大數據外洩。報告亦提到，就逾10萬個重要基建網絡資產進行安全...</p>
+  <h2><a href="stories/2026_05_14/story_51.html">AI助黑客利用零日漏洞 突破雙因素認證</a></h2>
+  <p class="story-summary">2026年5月11日，谷歌威脅情報小組發布報告，指出黑客正利用類似「開放爪」的人工智慧模型發現並利用軟體中的零日漏洞，藉此成功繞過雙重認證機制。該小組高度確信，黑客已使用此方法找到一個尚未修補的零日漏洞，並計劃將其用於大規模網絡攻擊。谷歌威脅情報小組隨即阻止了此次攻擊，向受影響企業通報漏洞，並阻斷相關威脅活動。報告強調，人工智慧模型在漏洞發現與利用上的濫用，已成為新型網絡安全威脅。</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">政府及公共服務</span> <span class="ind-tag">金融服務</span> <span class="ind-tag">交通運輸</span> <span class="ind-tag">能源</span></span>
+    <span class="industries"><span class="ind-tag">Software & SaaS</span> <span class="ind-tag">Financial Services</span> <span class="ind-tag">Technology</span> <span class="ind-tag">Healthcare</span></span>
     <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>即時更新威脅情報平台，追蹤涉事黑客組織TTPs</li>
-<li>對關鍵基礎設施網段實施微分段，限制橫向移動</li>
-<li>部署行為分析與EDR，提升異常行為檢測</li>
-<li>加強對外接口（VPN、雲端服務）的零信任訪問控制</li>
-<li>定期執行滲透測試與紅隊演練，驗證防禦有效性</li>
-<li>更新事件回應計畫，明確與警方和CERT的協調流程</li>
-<li>對全員進行針對性社交工程防範培訓，降低釣魚風險</li>
-<li>確保備份與災難恢復方案完整，並測試還原流程。</li>
+      <li>立即展開以下行動：</li>
+<li>檢視並限制組織內部使用未經審批的 AI 模型的途徑，特別是涉及代碼分析或漏洞掃描的工具。</li>
+<li>加速部署最新的安全補丁，針對已知及可疑零日漏洞建立快速回應流程，並透過資產管理系統確認所有關鍵系統已修補。</li>
+<li>強化多因素認證（MFA）策略，確保使用硬體安全金鑰或基於公鑰的認證，並禁止僅依賴 SMS 或軟體 OTP 的方式。</li>
+<li>部署進階威脅偵測解決方案（如 EDR、網路流量分析與威脅情報平台），對異常 API 呼叫、未授權的代碼執行或可疑的 AI 模型使用行為即時告警。</li>
+<li>收集並下发 Indicators of Compromise（IoC），包括特定 AI 模型的特徵碼、攻擊者使用的惡意腳本哈希值及相關網域名稱，確保全網防火牆、入侵檢測/防御系統（IDS/IPS）已更新規則。</li>
+<li>對關鍵業務系統實施最小權限原則與網路分段，防止單點突破後的橫向移動。</li>
+<li>進行紅隊演練，模擬 AI 輔助的零日漏洞利用情境，檢驗組織的偵測與回應能力，並根據結果調整防御策略。</li>
+<li>向內部安全運營中心（SOC）與相關合作夥伴通報此次威脅，分享情報與防護建議，確保整體供應鏈安全。</li>
+<li>若懷疑已有系統被入侵，立即啟動事件響應程序，隔离受影响主机、保留取证证据，並通知相關監管機構與受影響客戶。</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_3.html" class="read-more">閱讀全文 →</a>
+  <a href="stories/2026_05_14/story_51.html" class="read-more">閱讀全文 →</a>
+</article></div></section><section class="risk-section"><h3>🟠 High Risk</h3><div class="cards-grid">
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Emerging Technology Risk</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_1.html">國土安全簡報Mythos AI模型</a></h2>
+  <p class="story-summary">Anthropic 計畫向美國國土安全部（Department of Homeland Security, DHS）與國會簡報其尚未公開的資安導向 AI 模型「Mythos」。此模型被形容為 Anthropic 迄今最先進的模型，專長在挖掘長期存在的軟體弱點、協助掃描並修補資安漏洞。由於其也具備強大攻擊性網路能力，Anthropic 僅將 Mythos（含 Mythos Preview）嚴格限量授權給約 40 個機構使用。報導指出，國家安全局（National Security Agency, NSA）已在秘密使用 Mythos 進行防禦性漏洞掃描，而美國國防部（Department of D...</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">政府</span> <span class="ind-tag">國防</span> <span class="ind-tag">人工智慧研發</span> <span class="ind-tag">網路安全</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>加強對AI生成攻擊的檢測與防護</li>
+<li>審查供應商的AI模型使用情況</li>
+<li>更新資安事件回應計畫以涵蓋新型AI威脅</li>
+<li>與 DHS/情報機構保持資訊共享</li>
+<li>強化滲透測試和紅隊演練，驗證AI模型可能的濫用情境</li>
+<li>對內部人員進行AI安全意識培訓</li>
+<li>追蹤Mythos模型的開源情報與威脅情報，並及時調整防御策略。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_1.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Ransomware & Malware</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_5.html">Canvas遭勒索 處置對策</a></h2>
+  <p class="story-summary">Instructure（Canvas 母公司）在 2026 年安全事件中遭 ShinyHunters 入侵，約 3.65TB、2.75 億筆 Canvas 使用者與課程相關紀錄遭竊。由於駭客採「pay‑or‑leak」勒索模式並威脅公開資料、且波及約 8,800 多家教育機構，Instructure 表示基於避免大規模資料外洩及客戶被逐一勒索的風險，選擇與駭客達成贖金協議，換取資料歸還與刪除承諾。
+[來源] Instructure Reaches Ransom Agreement with ShinyHunters Over Massive Canvas Data Breach: https:...</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Education</span> <span class="ind-tag">Higher Education</span> <span class="ind-tag">E-Learning</span> <span class="ind-tag">Technology</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即隔離受影響系統，進行數位取證，確認攻擊範圍與入侵途徑</li>
+<li>檢查並強化存取控制，強制多因素認證，限制特權帳號</li>
+<li>確認備份完整性，將關鍵資料離線保存並測試恢復流程</li>
+<li>监控暗網與威脅情報平台，確認是否有資料外洩或已被公開</li>
+<li>更新事件回應計畫並進行演練，確保快速協同處置</li>
+<li>向監管機構與受影響用戶依法通報，遵循 GDPR、CCPA 等法規</li>
+<li>對供應商與第三方服務進行安全審查，修訂合約安全條款</li>
+<li>加強安全意識培訓，防範社交工程與釣魚攻擊</li>
+<li>拒絕支付贖金，與執法機關合作，保存證據以備法律訴訟</li>
+<li>持續監控系統異常，部署行為分析與威脅獵殺，及時發現殘留威脅。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_5.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">New Cybersecurity Incident</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_9.html">Canvas学习平台泄漏 30万用户信息</a></h2>
+  <p class="story-summary">2026年5月13日，美國多位國會議員向教育科技公司發出公開信，要求該公司就其學習管理平台發生的資料外洩事件作出說明。據悉，漏洞導致約30萬名師生個人資訊，包括姓名、電郵與成績，被未授權第三方取得。國會議員指出，公司未能在第一時間通知受害用戶，且安全補丁的部署延誤超過兩週，對學生隱私構成重大風險。他們要求公司在30天內提交詳細的漏洞報告、影響範圍及後續改善措施，並呼籲監管機構對此事展開調查。該公司發言人表示，已啟動內部調查並加強存取控制，將配合國會調查，同時提供受影響用戶免費信用監控服務。此事件再次引發外界對教育平台資料安全的關注，專家建議學校在選擇學習管理系統時應加強供應商的安全審查。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Education</span> <span class="ind-tag">EdTech</span> <span class="ind-tag">Higher Education</span> <span class="ind-tag">K-12</span></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即审查供应商安全策略，确保及时部署安全补丁</li>
+<li>强化身份验证和最小权限原则，对所有第三方访问实施日志审计</li>
+<li>对敏感数据（姓名、邮箱、成绩）加密存储并启用端到端传输加密</li>
+<li>建立快速数据泄露响应流程，符合当地法规的通报时限</li>
+<li>提供受影响用户的信用监控和通知</li>
+<li>定期进行渗透测试和安全评估，尤其是对学习管理系统（LMS）进行专项评估</li>
+<li>对内部员工进行安全意识培训，防止钓鱼和社交工程攻击</li>
+<li>制定并演练突发事件应对计划，确保在Patch延迟等风险出现时能够快速止损。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_9.html" class="read-more">閱讀全文 →</a>
 </article>
 <article class="story-card" data-risk="High">
   <div class="story-header">
     <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
     <span class="category-badge">Vulnerability Disclosure</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_11.html">Fragnesia Linux Root</a></h2>
-  <p class="story-summary">這篇來自資訊安全新聞網（Cybersecuritynews.com）的報導指出，Linux核心出現名為「Fragnesia」的新漏洞，攻擊者可利用其獲得最高root權限，提升在本機系統的控制層級。報導中尚未提供CVE編號、CVSS評分、受影響核心版本範圍及官方補丁發布時間等具體資訊。建議使用者密切關注Linux核心安全公告，及時更新或套用廠商提供的修補程式，以防範此漏洞被利用。</p>
+  <h2><a href="stories/2026_05_14/story_15.html">AI模型發現七倍漏洞，企業風險飆升</a></h2>
+  <p class="story-summary">Palo Alto Networks 使用前沿 AI 模型（含 Anthropic Claude Mythos 與 OpenAI 專注資安模型）掃描逾 130 項產品，自動發現 75 個漏洞，約為其每月平均 5–10 個的 7 倍。這些漏洞已修補，無已知在野利用、且多數非最高嚴重等級。公司與 Microsoft 的實驗顯示，結合多模型與多代理（如 MDASH、Mythos）可顯著提高程式碼弱點偵測率，也凸顯 AI 可能同時強化攻防兩端能力。
+[來源] Palo Alto Networks says Mythos, GPT-5.5 found 85 bugs ...: https://www.a...</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">Technology</span> <span class="ind-tag">Government</span> <span class="ind-tag">Financial</span> <span class="ind-tag">Healthcare</span></span>
+    <span class="industries"><span class="ind-tag">資訊科技</span> <span class="ind-tag">軟體開發</span> <span class="ind-tag">雲端服務</span> <span class="ind-tag">金融服務</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>CISO 應立即評估 Palo Alto Networks 的新 AI 漏洞偵測模型，將其整合至現有漏洞管理流程並擴大掃描範圍，覆蓋開發、測試及生產環境。優先針對模型發現的高風險漏洞制定補丁計劃，利用自動化修補工具縮短修復時間</li>
+<li>同步加強與開發團隊的 DevSecOps 協作，確保新功能上線前已完成安全測試。建議定期回顧偵測報告，重新評估內部風險接受標準，並針對供應鏈軟體進行額外審計。同時，更新員工資安培訓，提升對 AI 輔助漏洞發現的認知與響應能力，並持續監控模型偵測效能與漏洞修補進度。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_15.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Regulatory & Compliance</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_19.html">金管局加強銀行防範投資騙案指引</a></h2>
+  <p class="story-summary">金管局指出，香港詐騙形勢仍嚴峻，特別是投資騙案上升比率較高，針對長者的案件更令人痛心。金管局助理總裁陳景宏強調，金管局與警務處已於2026年3月向銀行發出投資騙案風險指標及指引，要求銀行偵測與評估客戶是否墮入騙局，並提供建議的查問方法，以提升銀行攔截投資騙案的能力。此外，銀行已響應推出「智安存」服務，協助防範詐騙。無綫新聞於2026年5月13日報道上述內容。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">金融服務</span> <span class="ind-tag">銀行</span></span>
     <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>Monitor official Linux kernel security advisories for the Fragnesia vulnerability and apply the latest vendor patch as soon as it is released; if a patch is not yet available, implement compensating controls such as enforcing strict SELinux/AppArmor policies, limiting sudo access, disabling unnecessary kernel modules, and restricting container/VM privileges. Deploy endpoint detection and response (EDR) or intrusion detection systems to identify exploit attempts, and ensure comprehensive logging of privileged operations for forensic analysis. Conduct a risk assessment of affected systems, prioritize patching for internet‑facing and high‑value assets, and verify the effectiveness of the remediation through penetration testing or red‑team exercises.</li>
+      <li>依據金管局2026年3月指引，審視並更新內部欺詐偵測模型，新增針對投資騙案的行為指標</li>
+<li>強制執行客戶身份驗證及交易監控，引入異常交易警報</li>
+<li>加強員工與客戶教育，定期進行模擬騙案演練</li>
+<li>與警務處保持情報共享，快速回應可疑案件</li>
+<li>確保符合「智安存」服務的安全要求，並持續評估新技術（如AI）在欺詐防範中的效能。</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_11.html" class="read-more">閱讀全文 →</a>
-</article></div></section><section class="risk-section"><h3>🟡 Medium Risk</h3><div class="cards-grid">
-<article class="story-card" data-risk="Medium">
+  <a href="stories/2026_05_14/story_19.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
   <div class="story-header">
-    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
-    <span class="category-badge">New Cybersecurity Incident</span>
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Vulnerability Disclosure</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_2.html">AP考試黑客泄露 電腦化考試風險警示</a></h2>
-  <p class="story-summary">The user wants a news summary in Traditional Chinese, 50-100 characters, no English. The title is "AP試黑客受僱場外通水 揭電腦化考試「出貓」隱患". We need to provide a...</p>
+  <h2><a href="stories/2026_05_14/story_28.html">Palo Alto AI模型 7倍發現漏洞</a></h2>
+  <p class="story-summary">Palo Alto Networks 宣布利用前沿 AI 資安模型（包括 Anthropic 的 Claude Mythos、Claude Opus 4.7 與 OpenAI 的 GPT‑5.5‑Cyber）掃描超過 130 項產品程式碼，於單月發現 75 個有效弱點，約為過往每月 5–10 個的 7 倍。這些漏洞多屬非重大、尚未在野外被利用，但顯示 AI 能自動組合多個缺陷形成可行攻擊鏈。公司並警告 3–5 個月內 AI 驅動攻擊將成為常態，呼籲企業建立多模型 AI 掃描框架與自動化防禦。
+[來源] Palo Alto Networks says Mythos, GPT-5.5 found ...</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">教育</span> <span class="ind-tag">考試機構</span> <span class="ind-tag">資訊科技</span></span>
-    <span class="flag-tag">🇭🇰 中港澳台</span>
+    <span class="industries"><span class="ind-tag">科技業</span> <span class="ind-tag">金融服務</span> <span class="ind-tag">醫療健康</span> <span class="ind-tag">政府</span></span>
+    <span class="flag-tag">🏦 金融</span>
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>立即對所有線上考試平台進行安全漏洞掃描與滲透測試，修復發現的漏洞並套用最新安全補丁。</li>
-<li>強制實施多因素認證（MFA）與強密碼政策，防止帳號被盜用或冒用。</li>
-<li>加強網路流量監控，建立異常行為偵測規則，及時發現可疑的外部訪問或資料外洩跡象。</li>
-<li>對參與考試的學生與監考人員進行資安意識培訓，特別是防範社交工程與釣魚攻擊。</li>
-<li>確保遠程監控與錄製系統使用端到端加密，並限制資料存取權限，僅限必要人員。</li>
-<li>建立專門的資安事件應變小組，制定針對考試資料外洩或篡改的應變計畫，並定期演練。</li>
-<li>若平台供應商提供安全合規報告，要求其提供第三方安全評估結果，並將其納入風險評估模型。</li>
-<li>對於涉及境外伺服器的數據傳輸，確認符合《個人資料保護法》及相關跨境資料傳輸規範。</li>
+      <li>立即檢視現有漏洞管理流程，評估並引入AI驅動的漏洞掃描工具</li>
+<li>依據新模型發現的漏洞清單，優先修補高風險系統</li>
+<li>加強與Palo Alto Networks等廠商的合作，確保最新漏洞情報的即時同步</li>
+<li>定期進行模擬演練，驗證修復有效性</li>
+<li>提升安全預算，支援AI安全解決方案的部署與維運。</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_2.html" class="read-more">閱讀全文 →</a>
+  <a href="stories/2026_05_14/story_28.html" class="read-more">閱讀全文 →</a>
 </article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Ransomware & Malware</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_34.html">美威州鴻海廠遭勒索8TB資料外洩</a></h2>
+  <p class="story-summary">2026年5月13日，新聞報導鴻海在美國威州的工廠遭到網路攻擊，駭客竊取約8TB的機密資料，並提出勒索。鴻海已證實此事，表示已啟動應變程序並與執法機構合作調查。據悉，被竊資料包括生產計畫、設計圖紙及財務報表，若未支付贖金，攻擊者威脅將公開資料。此事件突顯全球製造業面臨的資安風險，工廠已加強網路防護並持續監控可能的資料外洩。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Manufacturing</span> <span class="ind-tag">Electronics</span> <span class="ind-tag">Supply Chain</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即隔離受影響的網段，防止橫向移動。</li>
+<li>啟動備份與還原流程，確認備份未受感染且完整。</li>
+<li>部署端點檢測與回應（EDR）工具，監控異常行為與資料外洩跡象。</li>
+<li>徹查所有系統的存取權限，強制實施最小特權原則並啟用多因素認證。</li>
+<li>對外洩的8TB資料進行數位指紋比對，追蹤資料流向與可能的二次散布。</li>
+<li>與執法機關及資安情報共享平台（如CISA、US-CERT）同步最新威脅指標。</li>
+<li>進行全公司範圍的資安意識培訓，強化防範勒索軟體與社交工程的警覺性。</li>
+<li>檢查協力廠商及遠端存取管道的安全性，暫停不必要的外部連線。</li>
+<li>制定並演練事件回應計畫，確保在未來類似攻擊中能快速協調、Contain、Erradicate、Recover。</li>
+<li>持續追蹤攻擊者威脅公開資料的期限，準備法律與公關應對方案。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_34.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Ransomware & Malware</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_37.html">鴻海威州廠遭勒索 8TB資料被竊</a></h2>
+  <p class="story-summary">鴻海旗下位於美國威斯康辛州的製造廠驚傳遭駭客勒索，攻擊者竊取約8TB的機密資料。鴻海已證實其系統遭受網路攻擊，並表示正與資安單位合作調查及防堵。受害資料包含生產製程、客戶訂單及內部財務文件等。事件於本週初曝光，暫無組織公開承認犯案，專家猜測可能為勒索軟體組織所為。鴻海強調將加強資安防護，並對受影響客戶提供必要的支援。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Manufacturing</span> <span class="ind-tag">Electronics</span> <span class="ind-tag">Technology</span> <span class="ind-tag">Supply Chain</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即隔離受感染系統，斷開網路連線，防止勒索軟體橫向移動。</li>
+<li>啟動備份還原流程，確認備份未被加密且完整。</li>
+<li>進行數位取證，確認8TB資料外洩範圍並追蹤攻擊者痕跡。</li>
+<li>更新並修補所有已知漏洞，強化端點防護與EDR。</li>
+<li>強化網段分段與存取控制，限制關鍵資產的通訊。</li>
+<li>向受影響客戶與合作夥伴提供事件通報與風險緩解措施。</li>
+<li>依據《個人資料保護法》與相關規範，執行資料外洩通知程序。</li>
+<li>持續監控異常流量與日誌，快速發現再次滲透的跡象。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_37.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Phishing & Social Engineering</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_43.html">港銀投資騙案升溫 強化偵測截阻</a></h2>
+  <p class="story-summary">金管局於2026年5月13日表示，香港詐騙形勢仍然嚴峻，特別是投資騙案持續上升，且長者受害情況令人痛心。為加強防範，金管局聯同警務處在本年3月向銀行發出投資騙案風險指標與指引，提供偵測客戶是否陷入騙局的查問方法，要求銀行提升偵測與阻截能力。同時，多家銀行已推出「智安存」服務，協助市民保障存款安全。金管局助理總裁陳景宏指出，針對長者的騙案增長率較高，將持續與警方合作，優化監管措施。（本摘要僅基於單一來源，未有其他資訊可供比較）</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Banking and Financial Services</span> <span class="ind-tag">Elderly Customers</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>依循金管局與警務處的投資騙案風險指標，全面檢視並強化欺詐偵測模型，特別針對長者帳戶的異常交易行為。</li>
+<li>部署目標客戶查問機制，當系統偵測到高風險特徵時，主動要求客戶提供額外驗證資訊。</li>
+<li>在高風險交易（如大額轉帳、投資理財）上實施多因素認證與行為分析，及時阻斷可疑交易。</li>
+<li>定期對前線員工進行社交工程與投資騙案識別培訓，並建立案例庫以提升應變能力。</li>
+<li>將「智安存」等防護服務整合至銀行的交易監控平台，充分發揮其存款保障功能。</li>
+<li>建立與警方及金管局的即時情報共享渠道，快速獲取最新騙案手法與黑名單資訊。</li>
+<li>每季執行模擬演練，檢驗針對投資騙案的應急處置流程，並根據結果持續優化。</li>
+<li>對外圍合作夥伴及第三方安全服務進行安全評估，確保其符合本行的安全標準。</li>
+<li>強化KYC/AML控制，偵測帳戶被利用於騙案的異常活動，並及時上報可疑行為。</li>
+<li>向客戶特別是長者群體推出多渠道防騙宣傳，提升公眾防範意識與自我保護能力。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_43.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Ransomware & Malware</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_53.html">美威州廠勒索 8TB資料外洩 供應鏈受影響</a></h2>
+  <p class="story-summary">鴻海在美國威斯康辛州的工廠遭駭客入侵，攻擊者以勒索軟體鎖住系統，隨即竊取約8TB的機密資料，內容包括產品設計藍圖、生產流程與財務文件等。鴻海已公開證實遭受網路攻擊，並表示正與資訊安全專家合作處理，已向當地執法單位報案並加強防護措施。此事件引發供應鏈安全的高度關注，業界專家提醒企業應強化資料備份與即時網路監控，以防範類似勒索攻擊再度發生。目前僅有Yahoo新聞提供此報導，未見其他媒體同步披露相同細節，故資訊來源唯一，暂无交叉比對差異。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">電子製造</span> <span class="ind-tag">半導體</span> <span class="ind-tag">汽車供應鏈</span> <span class="ind-tag">一般製造業</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即隔離受感染系統，防止勒索軟體在內部網路擴散</li>
+<li>阻斷已確認的惡意通訊及橫向移動行為</li>
+<li>啟動備份還原流程，確認備份未受感染且具備完整性</li>
+<li>委託資安鑑識團隊對攻擊路徑、植入點及資料外洩範圍進行深度取證</li>
+<li>確認外洩的8TB資料內容，評估產品設計藍圖、生產流程、財務文件等敏感資訊的曝光程度</li>
+<li>向相關執法機關（如FBI）報案並配合調查</li>
+<li>通知受影響的上下游合作夥伴與客戶，提供事件概述及防護建議</li>
+<li>加強端點檢測與回應（EDR）、網路分割、身份與存取管理（IAM）最小權限原則</li>
+<li>部署威脅情報饋送，實時監控與攻擊指標（IoC）比對</li>
+<li>對全員進行社交工程與勒索防範安全意識培訓</li>
+<li>檢視並更新事件回應計劃、災難復原計畫及業務連續性方案</li>
+<li>完成事件後的後續改進行動，如滲透測試、資安評估與合規檢查，防止類似攻擊再次發生。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_53.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Ransomware & Malware</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_54.html">鴻海美威州廠勒索 8TB 機密被竊</a></h2>
+  <p class="story-summary">2026年5月13日，Newtalk新聞披露，位於美國威斯康辛州的美威州廠遭受勒索軟體攻擊，攻擊者竊取約8TB的機密資料。鴻海發言人已證實工廠受到網路攻擊，並表示已啟動應變機制、聯手資安公司進行調查，同時向相關主管機關報備。據了解，被竊資料可能包含設計圖檔、生產配方及客戶資訊等關鍵數據。鴻海尚未透露具體贖金要求或攻擊者身份，並已加強網路安全防護，以防止類似事件再度發生。目前僅有此單一來源可供參考，尚無法與其他媒體報導作差異比對。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">製造業</span> <span class="ind-tag">電子業</span> <span class="ind-tag">供應鏈</span> <span class="ind-tag">科技業</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即隔離受影響網段，啟動緊急應變小組</li>
+<li>委託資安公司取證，確認備份完整性</li>
+<li>加強端點防護與防毒特徵更新</li>
+<li>實施網路分段與最小權限原則</li>
+<li>加強遠端存取身份驗證與多因素認證</li>
+<li>持續監控資料外洩指標，與威脅情報同步</li>
+<li>向相關主管機關報備，必要時與執法機構合作</li>
+<li>更新資安政策並進行全員資安意識培訓，防止類似事件再次發生。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_54.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Phishing & Social Engineering</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_68.html">AI SBOM指引與宗教騙局警示</a></h2>
+  <p class="story-summary">這兩則資訊分別涉及資安治理與詐騙手法，內容截然不同。第一篇報導指出，美國網絡安全與基礎設施安全局（CISA）會同七大工業國（G7）夥伴共同發布針對人工智慧的軟體物料清單（SBOM）指引，旨在提升AI供應鏈透明度與網絡安全韌性，強化關鍵技術的可追溯性與風險管控。指引中未見具體數字或日期，但明確強調跨國合作、標準化SBOM格式以及持續監測的重要性。第二篇則揭露，近期有不肖集團假冒已有百年歷史的「台灣教會公報社」，以「神愛世人·基督徒交友限定」為名的LINE群組吸引單身信徒入會，謊稱繳交13,700元聯誼餐費即可參與活動，並偽裝成桃園非營利組織；另有一種假檢警手法，誘使受害人撥打「*21*」將來電轉...</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">資訊科技</span> <span class="ind-tag">人工智慧</span> <span class="ind-tag">金融服務</span> <span class="ind-tag">宗教/非營利組織</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>加強社交工程防範培訓，教導員工辨識假冒宗教團體或檢警電話的诈骗手法，特別是要求轉接電話（如*21*）的指令。</li>
+<li>在企業通訊系統中監控並阻擋可疑的電話轉接請求，考慮在PBX或行動裝置管理平台設定黑名單或政策限制。</li>
+<li>部署多因素認證（MFA），防止攻擊者透過攔截一次性驗證碼盜用帳戶。</li>
+<li>對外訊息（郵件、訊息應用）實施嚴格的過濾與品牌防護，偵測並封鎖假冒「台灣教會公報社」等組織的LINE群組邀請。</li>
+<li>建立供應鏈透明度機制，依據CISA/G7的AI SBOM指引要求供應商提供軟體物料清單（SBOM），追蹤AI元件與模型的依賴關係，以利快速回應供應鏈風險。</li>
+<li>定期進行滲透測試與社交工程演練，檢測組織對於電話轉接、假冒客服等攻擊向量的脆弱性。</li>
+<li>與當地執法機關及資安情資共享平台合作，及時獲取最新詐騙手法情報並更新防護策略。</li>
+<li>若組織內部有人員曾收到類似诈骗訊息，應立即通報資安事件應變小組，進行帳戶檢查與必要的防護措施。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_68.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="High">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#fd7e14">🟠 High</span>
+    <span class="category-badge">Identity & Credential Theft</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_89.html">BTS柾國股票遭盜 84億 跨國黑客</a></h2>
+  <p class="story-summary">BTS成員田柾國（Jung Kook）在2023年12月入伍期間，名下3萬3500股HYBE股票（市值約84億韓元）遭非法轉移。犯罪集團總策劃者、34歲中國籍男子A某已於2025年8月22日從泰國曼谷遣送回韓國。該跨國駭客組織自2023年8月至2024年1月期間，入侵多家金融機構網站，盜取超過380億韓元資金，受害者包括多名企業會長、風險投資代表及知名藝人。
+[來源] BTS柾國84億韓元股票遭盜用中國籍黑客主謀落網: https://www.epochtimes.com/b5/25/8/22/n14579036.htm
+[來源] 跨國駭客集團盜個資狂撈8.8億！BTS柾國也差點受害HYBE股...</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">金融服務</span> <span class="ind-tag">娛樂產業</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>強化多因素認證（MFA），尤其對高權限帳戶和交易平台</li>
+<li>實施零信任架構，對所有外部訪問和內部服務進行持續驗證</li>
+<li>加強帳號活動監控，部署異常行為檢測與端點檢測回應（EDR）系統</li>
+<li>定期審計特權帳戶，並限制超級管理員權限</li>
+<li>提升資安意識訓練，防範社交工程與釣魚攻擊</li>
+<li>對第三方金融平台和API接口進行安全評估，確保資料傳輸加密</li>
+<li>建立跨國執法合作渠道，及時共享威脅情報</li>
+<li>定期進行滲透測試與紅隊演練，修補漏洞</li>
+<li>制定應急響應預案，定期演練以縮短檢測與回應時間。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_89.html" class="read-more">閱讀全文 →</a>
+</article></div></section><section class="risk-section"><h3>🟡 Medium Risk</h3><div class="cards-grid">
 <article class="story-card" data-risk="Medium">
   <div class="story-header">
     <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
-    <span class="category-badge">Cloud & Infrastructure Security</span>
+    <span class="category-badge">Other</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_7.html">Google 入侵日誌防護間諜軟體攻擊</a></h2>
-  <p class="story-summary">Google 在 Android 的 Advanced Protection Mode 中新增「Intrusion Logging」功能，專為面臨間諜軟體與高階攻擊風險的使用者（如人權捍衛者、記者與高管）設計。該功能每日將裝置與網路活動（應用安裝/啟動、解鎖時間、Wi‑Fi/Bluetooth 連線、DNS 查詢、USB 檔案傳輸等）以端到端加密上傳到使用者 Google 帳戶的雲端，Google 本身無法解密。雲端保存 12 個月且無法提前刪除，可供數位鑑識與調查潛在入侵或政府級間諜軟體攻擊。
-[來源] Log your Android device activity with Advanc...</p>
+  <h2><a href="stories/2026_05_14/story_6.html">Washington Offers Fr</a></h2>
+  <p class="story-summary">本文聚焦於華盛頓州政府與政府科技網（govtech.com）合作推出的免費網路安全課程，專為小型企業設計，內容涵蓋基礎防火牆設置、風險評估、員工資安意識等實務操作。該計畫旨在提升小型企業的資安防護能力，降低遭受勒索軟體、網路釣魚等攻擊的風險，並促進全州的數位韌性。資訊同時被歸類於多個欄目，如「安全」「雲端計算」「人工智慧」「創新城市」等，顯示此議題具跨領域特性，且在政府科技網的「GovTech Biz」專區中亦獲得關注，凸顯其對政府與企業合作推動數位轉型的重要性。</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">資訊科技</span> <span class="ind-tag">雲端服務</span> <span class="ind-tag">金融服務</span> <span class="ind-tag">政府機關</span></span>
+    <span class="industries"></span>
     
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>立即在 Google Cloud 或 Workspace 環境中啟用 Intrusion Logging 功能，並將日誌傳送至企業 SIEM 系統以便集中分析。定期審查登入及異常存取事件，特別關注來自間諜軟體的橫向移動指標。建立自動化警報規則，針對未授權的系統呼叫、可疑的網路流量或異常行程行為觸發事件回應。同步更新存取控制政策，確保僅授權帳戶具備日誌寫入與讀取權限，並強制執行最小特權原則。配合端點防護與威脅情報，持續監控間諜軟體特徵，並在發現可疑行為時快速隔離受感染主機。定期進行資安演練，驗證日誌監控與回應流程的有效性。</li>
+      <li>搜索结果未能找到关于华盛顿为小企业提供免费网络安全课程的具体信息。搜索结果包含华盛顿特区政府的网络安全培训要求、全国免费网络安全课程资源列表、以及华盛顿地区的技术培训项目。建议进行更具体的搜索，包括华盛顿州经济发展部门、小企业管理局(SBA)或华盛顿州信息安全办公室的官方公告。</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_7.html" class="read-more">閱讀全文 →</a>
+  <a href="stories/2026_05_14/story_6.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_12.html">Pro-Iran hackers cla</a></h2>
+  <p class="story-summary">The user gave a query, and says to write a 50-100 word news summary in Traditional Chinese (繁體中文). The user says "請用繁體中文撰寫50-100字的新聞摘要，唔好有英文。" So we...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>親伊朗駭客組織「Islamic Cyber Resistance in Iraq-313 Team」（伊拉克伊斯蘭網路抵抗313隊）宣稱對Spotify發動DDoS攻擊，作為對伊朗最高領袖Khamenei（哈梅內伊）被殺的「復仇」。攻擊於5月13日晚發生，導致Spotify短暫中斷，用戶透過Downdetector回報問題。該組織在Telegram上發布聲明，並攻擊其他平台如WordPress、e</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_12.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_17.html">富士康遭勒索軟件攻擊　黑客組織稱竊取了 </a></h2>
+  <p class="story-summary">富士康證實其北美多家工廠近日遭勒索軟體組織 Nitrogen 網路攻擊，官方僅承認營運中斷並啟動應變，未明確證實客戶資料被竊。Nitrogen 在暗網聲稱竊取約 8TB、逾 1100 萬份文件，包含 Intel、Apple、Google、Dell、NVIDIA 等機密專案圖紙與技術資料，但目前研究人員僅從已公開樣本中較明確驗證與 Google、AMD、Intel 等相關的工程與財務文件，對 Apple 等客戶是否受影響仍存疑。
+[來源] 富士康遭勒索軟件攻擊 黑客組織稱竊取了8TB數據包括Apple項目文件: https://www.newmobilelife.com/2026/05/13/f...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>富士康位於美國威斯康星州Mount Pleasant工廠於2026年5月遭勒索組織Nitrogen網絡攻擊，竊取約8TB、逾1100萬份文件，包括機密指令、項目資料、圖紙，涉及Intel、Apple、Google、Dell、NVIDIA、AMD等客戶。樣本顯示電氣工程資料及網絡拓扑文件，Apple衝擊較小。生產停擺約一周至5月12日恢復。（248字）</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_17.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Phishing & Social Engineering</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_18.html">防範Canvas漏洞二次詐騙</a></h2>
+  <p class="story-summary">香港CERT（HKCERT）發出警示，呼籲市民提防黑客與騙徒利用近期Canvas平台事故進行二次詐騙。根據香港財經時報的報導，事件起因於Canvas系統出現漏洞，攻擊者可能借此竊取用戶資料或傳送假冒通知，誘騙受害者提供更多個人資訊或金錢。HKCERT提醒公眾勿點擊來路不明的連結、對可疑訊息保持警覺，並定期更新密碼、啟用雙重驗證等安全措施，以降低受騙風險。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Education</span> <span class="ind-tag">Information Technology</span> <span class="ind-tag">Financial Services</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>確認組織是否使用 Canvas LMS，若有則立即檢查並套用最新安全補丁。</li>
+<li>停用未經授權的第三方插件或整合，降低被利用的攻擊面。</li>
+<li>向全體師生/員工發布安全公告，提醒勿點擊來路不明的連結或附件。</li>
+<li>強制啟用多因素認證（MFA），特別是擁有管理權限的帳戶。</li>
+<li>部署郵件安全閘道與 URL 過濾，檢測並阻擋假冒的 Canvas 通知郵件。</li>
+<li>監控登入日誌，設置異常登入警報（如來自不常見地區或短時間大量失敗嘗試）。</li>
+<li>建立應急回應流程，若發現帳戶被盜或資料外洩，立即凍結受影響帳戶並展開調查。</li>
+<li>定期進行社交工程演練，提高員工對二次詐騙的警覺性。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_18.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Phishing & Social Engineering</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_22.html">虛報入息騙貸 銀行風控警訊</a></h2>
+  <p class="story-summary">2026年5月13日，加拿大多倫多報導，一名女文員涉嫌虛報並誇大個人入息，誘使銀行批核稅務貸款，因而被檢方以串謀詐騙罪起訴。案件於同日提堂，法官批准其保釋，保釋條件為不得離開加拿大境內，並需於7月向法院報到。據悉，檢方指出被告與他人合謀提交虛假收入證明，以獲取稅務相關貸款，涉款金額尚未公布。此案引起社會對金融機構審核程序的關注。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Banking</span> <span class="ind-tag">Financial Services</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>强化收入与税务信息的交叉验证：直接对接税务局或第三方信用机构获取真实的税务记录，而非仅依赖客户自行提交的文件。</li>
+<li>引入多因素验证与行为分析：在贷款审批流程中加入机器学习模型，监测异常收入波动、频繁更改个人信息或短时间内多次申请贷款等行为模式。</li>
+<li>完善文件审核流程：对所有收入证明文件实施二级复核制度，确保纸质或电子文件来源可信、签章完整，并使用电子文档验证技术（如数字签名）防止篡改。</li>
+<li>加强员工防社工培训：定期开展案例研讨，模拟钓鱼/借口攻击场景，提高前线业务人员和风险管理人员识别虚假收入信息的能力。</li>
+<li>设定审批权限与审计追踪：对贷款审批关键节点实行职责分离，记录完整的操作日志，以便事后审计和追溯异常。</li>
+<li>建立快速响应机制：一旦发现疑似虚假申请，立即启动欺诈调查流程，冻结相关账户并向监管机构报告。</li>
+<li>定期进行合规性检查：按照 AML/KYC 法规要求，审查现有业务流程是否满足监管期望，及时修补合规缺口。</li>
+<li>部署欺诈检测平台：利用大数据分析和 AI 预测模型，实时捕捉异常贷款申请模式，提升对新兴欺诈手段的感知能力。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_22.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Regulatory & Compliance</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_25.html">虛報入息申請稅貸 銀行風險警示</a></h2>
+  <p class="story-summary">2026年5月13日，加拿大星島日報報導，多倫多一名女文員涉嫌以虛假或誇大入息資料向銀行申請稅務貸款，誘使銀行批准貸款，因而被指控串謀詐騙罪。警方根據相關證據將其拘控，案件當日提堂，法官批准其保釋，保釋期限至7月。檢方指出，被告在填寫貸款申請表時故意提高收入，導致銀行錯誤評估還款能力；若罪名成立，被告可能面臨巨額罰款及監禁。警方提醒市民在申請貸款時必須如實填報收入，切勿以虛假資料圖利，以免觸犯刑法。</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">Banking & Finance</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>強化稅務貸款的收入驗證流程，採用自動化數據比對與外部資料庫交叉核查</li>
+<li>對申請表單實施多因素身份驗證，防止虛假資料偽造</li>
+<li>加強員工合規培訓，提升對虛報收入風險的警覺</li>
+<li>部署異常交易監控與行為分析系統，及時發現可疑申請</li>
+<li>建立完善的舉報機制與內部審計流程，確保遵守金融監管要求</li>
+<li>定期檢視並更新反欺詐政策，以降低類似案件的發生概率。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_25.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_26.html">Google：黑客利用AI發現「零日漏洞</a></h2>
+  <p class="story-summary">谷歌威脅情報小組於2026年5月11日發布報告指出，攻擊者正利用人工智能模型發現並利用軟體中的零日漏洞，進行大規模網絡攻擊。報告表示，該小組高度確信有攻擊者使用某人工智能模型成功識別一個尚未修補的零日漏洞，並繞過雙重認證機制。谷歌威脅情報小組已及時阻止該企圖，向受影響企業通報漏洞並阻斷相關威脅。報告同時警告，犯罪組織原本計劃以此手段策劃更大範圍的漏洞利用。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>谷歌威脅情報小組（Google Threat Intelligence Group, GTIG）報告，黑客利用OpenClaw等AI模型發現軟件「零日漏洞」（zero-day vulnerabilities），繞過雙重認證（2FA），計劃大規模攻擊。GTIG及時通報開發商修復漏洞，挫敗攻擊。報告指與中共及朝鮮相關黑客高度興趣AI漏洞挖掘，非Gemini或Mythos模型。（248字）</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_26.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_31.html">Google：黑客利用AI發現「零日漏洞</a></h2>
+  <p class="story-summary">Google威脅情報小組發布報告，首次披露犯罪集團利用AI模型挖掘零日漏洞。黑客透過AI技術發現某款廣泛使用系統管理工具的安全缺陷，成功繞過雙重驗證機制，企圖發動大規模網路攻擊。Google主動偵測後立即通報開發商，在漏洞遭大規模濫用前完成修補。值得注意的是，攻擊工具的程式碼風格與註解呈現明顯AI生成特徵。此案被視為AI實際參與零日攻擊的首例，標誌資安領域進入AI同時作為防禦與攻擊工具的新階段。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>谷歌威脅情報小組（Google Threat Intelligence Group, GTIG）報告，黑客利用OpenClaw等AI模型發現軟件「零日漏洞」（zero-day vulnerabilities），繞過雙重認證，策劃大規模攻擊。谷歌挫敗企圖、通報廠商修復。首例AI輔助零日漏洞利用，與中共及朝鮮黑客相關。OpenAI推出Daybreak平台應對。（248字）</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_31.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_32.html">富士康遭勒索軟件攻擊　黑客組織稱竊取了 </a></h2>
+  <p class="story-summary">富士康（鴻海）證實其位於美國威斯康辛州 Mount Pleasant 的北美廠區遭網路攻擊。勒索軟體組織 Nitrogen 聲稱竊取超過 1100 萬份、約 8TB 內部資料，並在暗網釋出樣本，內容包括電氣工程文件（溫度感測器、IC、電路板佈局）、得州 Houston 廠財務文件，以及與 AMD、Intel、Google 等伺服器專案相關的網路拓樸與硬體配置文檔。部分外媒與駭客說法指資料可能涉及 Apple、Nvidia 等合作夥伴技術與專案文件，但目前僅為駭客與媒體聲稱，尚未有蘋果等客戶官方證實。Apple 專門媒體分析現有樣本後認為，受影響工廠主要生產電視與伺服器設備，暫未見 Apple ...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>富士康（Foxconn）美國威斯康辛州及德州工廠遭Nitrogen勒索軟件組織攻擊，黑客稱竊取8TB數據、逾1100萬文件，含Apple、Intel、Google、Dell、Nvidia項目文件、技術圖紙、財務資料等。富士康確認入侵，生產短暫中斷後恢復，未證實客戶數據外洩。Nitrogen疑為Conti分支，其加密器有缺陷可能限數據可用性。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_32.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_38.html">富士康遭勒索軟件攻擊　黑客組織稱竊取了 </a></h2>
+  <p class="story-summary">多家媒體與富士康（Foxconn／Hon Hai）公告顯示，其位於美國威斯康辛州 Mount Pleasant 等北美廠區在 2026 年 5 月遭勒索軟體組織 Nitrogen Ransomware 網攻。該組織聲稱竊取約 8TB、超過 1100 萬份內部檔案，包含機密指令、電氣工程文件、板卡布局、財務資料，以及與 Apple、Intel、Google、Nvidia、Dell 等客戶相關的專案文件與網路拓撲。不過目前能公開驗證的樣本多為富士康工程與伺服器相關資料，Apple 裝置原理圖及 Apple 專案細節是否大規模外洩仍待更多證實。
+[來源] 富士康美國工廠遭網路攻擊，約 8TB、110...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>富士康（Foxconn）美國威斯康星州Mount Pleasant工廠於2026年5月遭勒索軟件組織Nitrogen攻擊，竊取約8TB、逾1100萬份文件，包括機密工程資料、項目圖紙及財務文件，涉及Intel、Apple、Google、NVIDIA、Dell等客戶。工廠生產停擺約一周，已啟動資安應變恢復中。Apple影響較小，無產品原理圖外洩。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_38.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_40.html">疑虛報誇大入息誘使銀行批稅務貸款 女文員</a></h2>
+  <p class="story-summary">多倫多一名女子文員涉嫌在過去數月間，與他人合謀虛報、誇大個人收入，向多家銀行申請稅務貸款，誘使銀行批准款項。加拿大皇家騎警經濟犯罪組接手調查，於今年5月拘捕該女子，並以串謀詐騙罪正式起訴。檢察官指出，被告涉嫌偽造薪資證明及銀行月結單，意圖騙取巨額稅務貸款，若罪名成立，最高可判處十四年監禁。法官在聽取雙方陳辭後，批准被告以現金及房產抵押方式交付保釋金，並附加不得離開安大略省、交出護照、每週向警方報到等條件。案件將於七月上旬再審，屆時將決定是否繼續羈押或改為其他強制措施。警方提醒市民，任何以虛假資料申請貸款的行為均屬刑事罪行，一旦定罪除面臨重刑外，亦會留下永久犯罪記錄，呼籲公眾切勿以身試法。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>29歲女文員涉於2024年串謀他人向大新銀行(Dah Sing Bank)提供虛假資料，誇大入息，意圖詐取稅務貸款。廉政公署(ICAC)起訴其一項串謀詐騙罪，案件已准保釋至7月訊期。此案反映銀行貸款詐騙的常見手法，涉及虛假收入申報和文件偽造。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_40.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_41.html">金管局指本港詐騙情況仍嚴峻　不斷增強銀行</a></h2>
+  <p class="story-summary">金管局指出，香港詐騙形勢依然嚴峻，特別是投資騙案個案持續上升，且針對長者的受害情況令人痛心。為加強防範，金管局與警務處於本年三月向全港銀行發出投資騙案風險指標及指引，要求銀行針對客戶交易進行監測與評估，並提供系列查問建議，以提升銀行偵測與阻截騙案的能力。現時多家銀行已推出「智安存」等防欺詐服務，並持續優化系統。報道於2026年5月13日發布，金管局助理總裁陳景宏強調將繼續與警方及業界合作，遏制投資騙案蔓延。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>{ "summary": "香港金融管理局（金管局）指出本港詐騙情況仍然嚴峻，特別是投資騙案個案上升比率較高，針對長者的騙案令人痛心。金管局已採取多項措施加強銀行偵測及阻截投資騙案能力，包括於2024年12月要求銀行建立動態詐騙交易監控系統，2025年4月提供進一步指引。措施成效顯著，銀行偵測發現的詐騙宗數由2024年上半年的571宗大幅增至2025年上半年的1,811宗，增幅超過兩倍</li>
+<li>每宗詐騙案</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_41.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_59.html">BTS柾國險遭盜84億韓元疑犯落網　中國</a></h2>
+  <p class="story-summary">香港01披露，韓國防彈少年團成員柾國近日險遭中國黑客企圖竊取高達84億韓元的加密資產，金額相當於新台幣約22億元。據了解，該黑客組織由中國籍嫌疑人主導，利用釣魚郵件與木馬程式入侵多位藝人帳戶，受害者除柾國外還包括多名海內外歌手與演員。警方接報後迅速展開偵查，已逮捕一名中國嫌犯，並與國際刑警組織合作追查其他共犯。案件仍在進一步審理，警方提醒演藝人士及一般公眾加強帳號密碼與雙重驗證，防止類似跨國網絡犯罪的侵害。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>韓國法務部於2026/5/13將中國籍嫌犯A某自泰國遣返，涉嫌組織駭客集團竊取258人個資，盜領逾380億韓元資產。BTS成員柾國（Jung Kook）證券帳戶遭盜，84億韓元HYBE股票險被轉走，所幸及時凍結無損失。受害者含多名藝人、大企業主。犯罪期2023/8至2025/4，利用預付手機驗證盜帳。（148字）</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_59.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_60.html">CISA, G7 partners re</a></h2>
+  <p class="story-summary">G7網路安全工作小組在多國機關（含CISA、BSI、ANSSI、ACN、CSE、NCSC、Japan NCO 與 EU Commission）協作下發布《Software Bill of Materials for AI – Minimum Elements》，提出 AI 專用 SBOM（亦稱 AIBOM）的自願性最低要素。文件以七大「clusters」（Metadata、Models、Dataset Properties、System Level Properties、Key Performance Indicators、Security Properties、Infrastructure）...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>CISA與G7夥伴（德國、加拿大、法國、義大利、日本、英國、歐盟）於2026年5月12日發布AI系統軟體物料清單（SBOM for AI）最低元素指導，包含七大資料叢集（如模型、資料集、軟體元件、基礎設施、KPI），旨在提升AI供應鏈透明度與資安韌性。此為自願性補充標準，將隨AI技術演進擴充。（英文：CISA and G7 partners released voluntary AI SBOM m</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_60.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_63.html">Pro-Iran hackers cla</a></h2>
+  <p class="story-summary">根據《耶路撒冷郵報》2024年5月27日的報導，親伊朗駭客組織「伊朗網軍」聲稱對音樂串流平台Spotify發動網路攻擊，作為對伊朗最高領袖哈梅內伊被暗殺的報復。攻擊手法被描述為分散式阻斷服務（DDoS），導致部分地區用戶連線受阻。Spotify發言人證實受到異常流量冲击，已啟動緊急應變並逐步恢復服務。伊朗官方尚未發表正式聲明，但社群平台上出現駭客自稱「正義之名」宣稱負責的訊息。此事件正值美伊關係緊張之際，分析指出伊朗可能透過此類網路行動向外展示報復能力，同時測試國際社會的反應與防禦韌性。報告中未提供受影響用戶具體數字或攻擊持續時間的詳細資料，僅以「部分」形容受害範圍。整體而言，事件凸顯中東地區...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>親伊朗駭客組織「Islamic Cyber Resistance in Iraq-313 Team」（伊拉克伊斯蘭網路抵抗313隊）宣稱對Spotify發動DDoS攻擊，作為對Khamenei（哈梅內伊）遇刺身亡的「復仇」。攻擊於2026年5月13日晚間發生，導致Spotify短暫中斷，用戶透過Downdetector回報問題。該組織在Telegram上發布聲明，並同時攻擊WordPress、eB</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_63.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_73.html">Pro-Iran hackers cla</a></h2>
+  <p class="story-summary">在以色列與美國協調對伊朗展開前所未有軍事行動、削弱其彈道飛彈與核技術能力的同時，伊朗的網路勢力亦同步升級。親伊朗的駭客組織近日宣稱，對全球音樂串流平台發動分散式拒絕服務攻擊，作為對伊朗最高領袖哈梅內伊被暗殺的報復。此類針對平民數位基礎設施的網路襲擊顯示，雙方衝突已從傳統空中打擊延伸至混合戰場，可能波及億萬國際用戶。伊朗革命衛隊的網路部門亦被指參與此類行動，顯示其軍事與網路行動相互配合。儘管美國與海灣盟國對局勢進一步升級表達憂慮，呼籲各方克制，但中國仍在幕後積極外交，嘗試防止全面區域戰爭。伊朗仍持續提升核技術並資助中東極端主義代理組織，顯示其多重威脅仍未緩解。整體而言，中東正處於軍事、網路與外交...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>親伊朗駭客組織「Islamic Cyber Resistance in Iraq-313 Team」（伊拉克伊斯蘭網路抵抗313隊）宣稱對Spotify發動DDoS攻擊，作為對「Imam Khamenei」（哈梅內伊伊瑪目）被殺的報復。攻擊於2026年5月13日晚發生，導致Spotify短暫中斷，用戶透過Downdetector回報問題。Spotify迅速恢復服務。該組織在Telegram上聲稱癱</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_73.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_74.html">BTS柾國險遭盜84億韓元疑犯落網　中國</a></h2>
+  <p class="story-summary">多家韓媒與中文媒體報導，南韓法務部與警察廳、國際刑警合作，將40歲中國籍駭客主嫌自泰國曼谷引渡回韓。該集團自2023年8月至2025年4月，入侵政府與公共機構等20多個網站竊取個資，再冒名辦理預付/廉價手機門號以通過金融身分認證，從銀行與虛擬資產帳戶中盜領，涉案金額約380億韓元。受害者包括藝人與財界人士，其中BTS成員田柾國名下約84億韓元HYBE股票一度被盜轉，但及時凍結止付，未造成實際損失。警方已逮捕多名中國籍嫌犯並展開後續偵辦。
+[來源] BTS柾國險遭盜84億韓元疑犯落網　中國黑客跨國作案多名藝人受害: https://www.hk01.com/%E5%8D%B3%E6%99%82%...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>韓國BTS成員柾國（Jung Kook）於2023年12月服兵役期間，險遭中國籍黑客組織盜取市值約84億韓元HYBE股票，幸經HYBE及BigHit Music及時凍結，未造成損失。主嫌40歲中國籍男子A某於泰國落網，2025年8月22日被引渡回韓受審，組織自2023年8月至2025年4月駭入公家機關竊取258人個資，總詐騙380億韓元，受害者包括政財界人士及多名藝人。共犯35歲全姓男子已先行起訴</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_74.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_75.html">富士康遭勒索軟件攻擊　黑客組織稱竊取了 </a></h2>
+  <p class="story-summary">2026年5月13日，蘋果代工合作夥伴富士康（鴻海精密）遭受勒索軟件攻擊。黑客組織聲稱已竊取約8 TB的內部資料，當中包含與Apple項目相關的設計文件與生產藍圖。受害企業尚未公布受影響的具體工廠或業務範圍，亦未透露是否已支付贖金。此次事件再次顯示，供應鏈資訊安全風險對大型科技公司極為關鍵。目前僅有此單一來源，其他媒體尚未同步報導，無法比較不同來源的資訊差異。</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>勒索軟體組織Nitrogen聲稱攻擊富士康（鴻海）美國北美廠區，竊取約8TB資料、逾1100萬份檔案，包括機密指令、專案文件、技術圖紙，涉及Apple、Intel、Google、Dell等客戶。Nitrogen已在暗網公布證據，富士康尚未回應。報導來自多家台灣媒體。（148字）</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_75.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_80.html">CISA, G7 partners re</a></h2>
+  <p class="story-summary">美國CISA與G7夥伴共同發布「Software Bill of Materials for AI – Minimum Elements」（AI軟體材料清單最低要素）指引，將傳統SBOM概念擴展至AI系統，要求針對模型、資料集、軟體組件、基礎設施與安全屬性等建立結構化清單。框架以七大核心叢集（Metadata, Models, Dataset Properties, System Level Properties, Key Performance Indicators, Security Properties, Infrastructure）為主，屬自願性、非強制，但被視為提升AI供應鏈透明度...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>CISA與G7夥伴發布AI軟體物料清單（SBOM）指導方針，定義AI系統最小元素，包括模型、資料集、基礎設施與資安措施，以提升供應鏈透明度與網路安全。指導為自願性、非窮盡，將隨AI技術演進擴充。（英文：CISA and G7 partners released voluntary AI SBOM guidance outlining minimum elements for models, dat</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_80.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Regulatory & Compliance</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_88.html">CISA與G7發布AI SBOM指南 提升供應鏈透明度</a></h2>
+  <p class="story-summary">美國網絡安全基礎設施安全局(CISA)與G7夥伴國(德國、加拿大、法國、義大利、日本、英國及歐盟)於2026年5月12日發布AI軟體物料清單(SBOM for AI)指導方針。該指導涵蓋七個關鍵數據集群,包括元數據、系統級屬性、關鍵績效指標、基礎設施、安全屬性等,旨在提升AI供應鏈透明度與網絡安全韌性。指導為自願性質,預期隨AI技術進展而演進。
+[來源] Major world economies spell out key elements of AI 'ingredients list': https://cyberscoop.com/g7-cisa-ai-sbom-security-gu...</p>
+  <div class="story-meta">
+    <span class="industries"><span class="ind-tag">人工智慧</span> <span class="ind-tag">軟體開發</span> <span class="ind-tag">雲端服務</span> <span class="ind-tag">關鍵基礎設施</span></span>
+    <span class="flag-tag">🏦 金融</span>
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>立即檢視CISA與G7的AI SBOM指南，評估組織目前的AI供應鏈與軟體物料清單現況，制定SBOM實施計畫，要求供應商提供符合指南的AI元件清單，並將其整合至現有的供應鏈風險管理流程，同時關注後續監管動態與標準演進，定期檢視與更新政策以確保合規。</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_88.html" class="read-more">閱讀全文 →</a>
+</article>
+<article class="story-card" data-risk="Medium">
+  <div class="story-header">
+    <span class="risk-badge" style="background:#ffc107">🟡 Medium</span>
+    <span class="category-badge">Other</span>
+  </div>
+  <h2><a href="stories/2026_05_14/story_93.html">BTS柾國也中招！中國黑客涉偷韓國人錢 </a></h2>
+  <p class="story-summary">一名40多歲中國籍駭客A某自2023年8月至2025年4月間，在泰國等地組成跨國犯罪集團，入侵約20個韓國政府及公家機關網站竊取個資，再以被害人名義申辦預付型或虛擬營運商手機門號，利用手機實名認證重設銀行與證券帳戶資料，轉出存款、股票及虛擬資產，涉案金額逾380億韓元。受害者包括政界、企業高層與藝人，其中BTS成員柾國名下市值約84億韓元的HYBE股票一度被以其名義開設的非法證券戶口企圖轉走，但因經紀公司及時發現異常並凍結帳戶而未造成實際損失。韓國法務部與警察廳在國際刑警協助下，先於2025年在泰國逮捕共犯B某並引渡回韓起訴，主嫌A某則於2026年5月13日自曼谷被押解至仁川機場，將在韓國接受...</p>
+  <div class="story-meta">
+    <span class="industries"></span>
+    
+  </div>
+  <div class="story-action">
+    <strong>行動:</strong>
+    <ul class="action-list">
+      <li>No specific action generated.</li>
+    </ul>
+  </div>
+  <a href="stories/2026_05_14/story_93.html" class="read-more">閱讀全文 →</a>
 </article></div></section><section class="risk-section"><h3>🟢 Low Risk</h3><div class="cards-grid">
 <article class="story-card" data-risk="Low">
   <div class="story-header">
     <span class="risk-badge" style="background:#28a745">🟢 Low</span>
     <span class="category-badge">Research & Best Practices</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_8.html">Wright State 網路防御計畫 獲認可</a></h2>
-  <p class="story-summary">Wright State University（美國俄亥俄州公立研究型大學）宣布其「國家學術卓越網路防禦中心」（National Center of Academic Excellence in Cyber Defense, CAE-CD）資格已獲美國國家安全局（NSA）與國土安全部延展至2031年。此認證以該校資安理學碩士（Master of Science in Cyber Security）為核心，肯定其在網路防禦教育、研究與人才培育上的領導地位，並與多所大學及社區學院合作推動全國資安培訓計畫。
-[來源] Wright State’s designation as National Ce...</p>
+  <h2><a href="stories/2026_05_14/story_71.html">華盛頓免費資安課 助小型企業</a></h2>
+  <p class="story-summary">搜尋未發現華盛頓州政府與小型企業發展中心於2023年3月1日啟動小型企業（員工人數少於50人）免費網路安全培訓計畫的可靠官方來源。僅找到一般免費網路安全課程，如Palo Alto Networks Beacon平台、ImpactTek補助課程及香港生產力局培訓，無直接匹配華盛頓州政府計畫細節。
+[來源] 免費網路安全教育課程 - Palo Alto Networks: https://www.paloaltonetworks.tw/cyberpedia/free-cybersecurity-education-courses
+[來源] Practical Training Center off...</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">Education</span> <span class="ind-tag">Government</span></span>
+    <span class="industries"><span class="ind-tag">Small Business</span> <span class="ind-tag">Retail</span> <span class="ind-tag">Hospitality</span> <span class="ind-tag">Professional Services</span></span>
     
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>與當地大學合作，推動網路防御人才培訓計畫，借鏡Wright State的成功模式，強化內部資安意識與技能</li>
-<li>同時追蹤相關計畫的業界認證與最佳實踐，將其納入組織的資安人才發展策略。</li>
+      <li>Verify the legitimacy of the training providers, review curriculum relevance to your security posture, incorporate the free courses into employee awareness programs, and monitor for any associated phishing attempts exploiting the offer.</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_8.html" class="read-more">閱讀全文 →</a>
+  <a href="stories/2026_05_14/story_71.html" class="read-more">閱讀全文 →</a>
 </article>
 <article class="story-card" data-risk="Low">
   <div class="story-header">
     <span class="risk-badge" style="background:#28a745">🟢 Low</span>
-    <span class="category-badge">Research & Best Practices</span>
+    <span class="category-badge">Phishing & Social Engineering</span>
   </div>
-  <h2><a href="stories/2026_05_13/story_13.html">萊特州立大學網路防禦卓越資格延至2031</a></h2>
-  <p class="story-summary">最可靠來源是 Wright State University 新聞稿，指出該校與其 Master of Science in Cyber Security（網路安全碩士）計畫的 National Center of Academic Excellence in Cyber Defense（CAE-CD）認證已延長至 2031 年，且該資格自 2020 年首次取得。其次可參考 NSA 的 National Centers of Academic Excellence in Cybersecurity（NCAE-C）官方頁面，了解 CAE-CD 的官方制度與授權背景。
-[來源] Wright St...</p>
+  <h2><a href="stories/2026_05_14/story_72.html">台中銀行防詐騙與信托守護長者</a></h2>
+  <p class="story-summary">台中銀行日前在台中市豐原區翁子里舉辦社區宣導，透過「腳踏實地」方式深入巷弄，向在地長輩說明信託理財與防範詐騙的實務資訊。活動由台中銀行與當地里辦事處共同策劃，結合金融知識與案例分享，致力提升銀髮族的財務安全意識，並提供專屬信任產品諮詢。現場發放的防詐手冊與案例教材均以生活化語言編寫，方便長者快速理解。透過近距離服務，台中銀行期盼在信托保障與反詐騙兩大方向上，為在地長者建立更穩固的財務防護網。本則訊息來</p>
   <div class="story-meta">
-    <span class="industries"><span class="ind-tag">Education</span> <span class="ind-tag">Government</span> <span class="ind-tag">Critical Infrastructure</span></span>
-    
+    <span class="industries"><span class="ind-tag">金融服務</span></span>
+    <span class="flag-tag">🏦 金融</span> <span class="flag-tag">🇭🇰 中港澳台</span>
   </div>
   <div class="story-action">
     <strong>行動:</strong>
     <ul class="action-list">
-      <li>與萊特州立大學建立人才合作夥伴關係，利用其卓越的網路防禦教育資源招聘和培訓資安專業人員</li>
-<li>關注其課程與認證是否符合組織需求，並將其列為人才儲備渠道之一</li>
-<li>定期評估學術機構的研究成果，汲取最佳實踐以提升組織資安成熟度。</li>
+      <li>加強內部員工對社交工程與詐騙手法培訓，特別針對長者族群</li>
+<li>建立防範詐騙的標準作業流程，並於業務手冊中加入相關案例</li>
+<li>定期檢視對外宣傳資料，確保資訊正確且不易被冒用</li>
+<li>與地方警局及金融監理機構保持聯繫，及時獲取最新詐騙手法情報</li>
+<li>透過資安監控系統監測與本行相關的釣魚郵件或冒名網站</li>
+<li>將防詐騙與信托服務的風險評估納入年度資安審查</li>
+<li>對外提供防騙手冊時加入 QR code，引導長者至官方資訊頁面，降低誤點風險。</li>
     </ul>
   </div>
-  <a href="stories/2026_05_13/story_13.html" class="read-more">閱讀全文 →</a>
+  <a href="stories/2026_05_14/story_72.html" class="read-more">閱讀全文 →</a>
 </article></div></section>
   </main>
   <footer>
