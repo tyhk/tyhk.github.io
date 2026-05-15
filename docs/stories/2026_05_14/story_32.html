@@ -20,7 +20,12 @@
       <span class="category-badge">Other</span>
     </div>
     <div class="story-body">
-      <p>{"cmd":["bash","-lc","python3 - << 'PY'\nimport sys, json, re, textwrap, os\n\ndef fetch(url):\n    import urllib.request, urllib.parse, html\n    try:\n        with urllib.request.urlopen(url, timeout=15) as response:\n            data = response.read().decode('utf-8', errors='replace')\n        return data\n    except Exception as e:\n        return None\n\nurl = 'https://www.newmobilelife.com/2026/05/13/foxconn-ransomware-attack-apple-files-stolen/'\nhtml_content = fetch(url)\nprint('Fetched...</p>
+      <p>富士康（鴻海）證實其位於美國威斯康辛州 Mount Pleasant 的北美廠區遭網路攻擊。勒索軟體組織 Nitrogen 聲稱竊取超過 1100 萬份、約 8TB 內部資料，並在暗網釋出樣本，內容包括電氣工程文件（溫度感測器、IC、電路板佈局）、得州 Houston 廠財務文件，以及與 AMD、Intel、Google 等伺服器專案相關的網路拓樸與硬體配置文檔。部分外媒與駭客說法指資料可能涉及 Apple、Nvidia 等合作夥伴技術與專案文件，但目前僅為駭客與媒體聲稱，尚未有蘋果等客戶官方證實。Apple 專門媒體分析現有樣本後認為，受影響工廠主要生產電視與伺服器設備，暫未見 Apple 製造原理圖或品管資料，因此對 Apple 直接衝擊相對有限。營運面上，當地媒體報導工廠曾因 IT / Wi‑Fi 中斷而停擺約一週，鴻海則表示已啟動資安應變與備援，現行生產與交貨維持正常。
+[來源] 富士康美國工廠遭網路攻擊，約 8TB、逾 1100 萬份文件外洩（Appleinsider 轉引）: https://finance.sina.com.cn/tech/roll/2026-05-13/doc-inhxtqxr4604074.shtml
+[來源] 富士康美國工廠遭網路攻擊，約8TB數據外洩、含多家科技巨頭文件: https://tech.ifeng.com/c/8t5VmyqH4KN
+[來源] 勒索軟體組織 Nitrogen 疑似駭入鴻海取得 8TB、上千萬份檔案: https://www.ithome.com.tw/news/175745
+[來源] 北美廠區傳遭竊 8TB 資料　鴻海：已啟動資安應變、營運正常: https://www.epochtimes.com/b5/26/5/13/n14763687.htm
+[來源] Foxconn ransomware crisis and 8TB data breach coverage（YouTube 節目）: https://www.youtube.com/watch?v=KXGwoRwSbHg</p>
     </div>
     <section class="impact-section">
       <h3>📊 影響分析</h3>
